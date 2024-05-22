@@ -10,6 +10,15 @@
 #navbar.scrolled {
   background-color: #F5E6C5 ;
 }
+.register{
+  position: relative;
+  left: 25vw;
+}
+.login{
+
+  position: relative;
+  left: 37vw;
+}
 
 #banner{
   background-image: url("../../public/img/Detalles-06.png");
@@ -184,10 +193,53 @@
   display: flex;
   flex-direction: column;
 }
-form input, form textarea{
-  border: solid 2px black;
+.contact{
+  background-image: url(../../public/img/Detalles-17.png) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F5E6C5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h2{
+  font-size: 40px;
+  padding: 42px 0 10px 0;
+}
+.contenedor-contacto{
+  width: 50vw;
+}
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form label{
+  font-size: 20px;
+}
+
+.form input, .form textarea{
+  border: solid 2px #D68B30;
   padding: 7px;
   margin: 10px 0;
   font-size: 18px;
-  border-radius: 15px;
+  border-radius: 12px;
 }
+.form button{
+  align-self: center;
+  border-radius: 12px;
+  color: #D68B30;
+  border: solid #D68B30 2px;
+  padding: 6px;
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  width: 100px;
+}
+.form button:hover{
+  background-color: #D68B30;
+  color: #F5E6C5;
+}
+

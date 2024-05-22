@@ -30,19 +30,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="#contactanos">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold btn btn-primary " href="#registra">Ingresa/Registrate</a>
-                        </li>
-                        
+                        </li>  
                     </ul>
+                    <a class=" fw-bold btn btn-primary login " href="#registra">Ingresa</a>
+                    <a class=" fw-bold btn btn-primary register " href="#registra">Registrate</a>
                 </article>
             </section>
         </nav>
     </header>
     <section class="container-fluid d-flex gap-5 " id="banner">
         <div id="logo">
-            <img src="./img/Logo_Mesa de trabajo 1.png" alt="">
+            <img src="./public/img/Logo_Mesa de trabajo 1.png" alt="">
         </div>
         <div id="container-text-banner">
             <h1><span>El privilegio de <br></span>alimentarnos y no desperdiciar</h1>
@@ -118,25 +116,25 @@
               </div>
             </div>
           </section>
-          <section class="container contact">
+          <section class="contact">
             <h2>Contáctanos</h2>
             <article class="contenedor-contacto">
                 <form action="" class="form">
                     <div class="labels">
                         <label for="full-name">Nombre completo</label>
-                        <input type="text" name="full-name">
+                        <input type="text" name="full-name" required>
                     </div>
                     <div class="labels">
                         <label for="email">Correo electronico</label>
-                        <input type="email" name="email" >
+                        <input type="email" name="email" required>
                     </div>
                     <div class="labels">
                         <label for="about">Asunto</label>
-                        <input type="text" name="about">
+                        <input type="text" name="about" >
                     </div>
                     <div class="labels">
                         <label for="comments">Mensaje</label>
-                        <textarea name="comments"  id="comments" cols="30" rows="10"></textarea>
+                        <textarea name="comments"  id="comments" cols="20" rows="10"></textarea>
                     </div>
                     <button type="submit">Enviar</button>
                 </form>
