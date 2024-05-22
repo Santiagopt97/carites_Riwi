@@ -1,3 +1,11 @@
+:root{
+  --beige:#F5E6C5;
+  --verde:#3F422F;
+  --naranja:#D68B30;
+}
+
+
+
 #navbar{
   background-color: transparent;
   backdrop-filter: blur(1px);
@@ -8,7 +16,7 @@
   transition: 350ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 #navbar.scrolled {
-  background-color: #F5E6C5 ;
+  background-color: var(--beige) ;
 }
 .register{
   position: relative;
@@ -47,7 +55,7 @@
   height: auto;
 }
 #container-text-banner{
-  color: #F5E6C5;
+  color: var(--beige);
   text-align: center;
 }
 #container-text-banner h1{
@@ -59,12 +67,12 @@
 }
 .about-us{
   padding: 3rem 0;
-  background-color: #F5E6C5;
+  background-color: var(--beige);
   text-align: center;
-  color: #3F422F;
+  color: var(--verde);
 }
 .about-us h2{
-  color: #D68B30;
+  color: var(--naranja);
   font-size: 4rem;
   line-height: 1.8;
 }
@@ -82,7 +90,7 @@
   height: 80vh;
 }
 #stats{
-  background-color: #3F422F;
+  background-color: var(--verde);
   padding: 4rem 8rem;
   gap: 5rem;
   display: flex;
@@ -90,7 +98,7 @@
   align-items: center;
 }
 #stats-text{
-  color: #F5E6C5;
+  color: var(--beige);
   width: 48%;
 }
 #iframe{
@@ -104,7 +112,7 @@
 
 .hero-section {
   padding: 2rem 0;
-  background-color:#F5E6C5 ;
+  background-color:var(--beige) ;
 }
 
 .hero-section_title {
@@ -134,7 +142,7 @@
   height: 100%;
   opacity: 0;
   background: RGBA(0,0,0,0.8);
-  color: #F5E6C5;
+  color: var(--beige);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 12px;
@@ -198,7 +206,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #F5E6C5;
+  color: var(--beige);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,7 +229,7 @@
 }
 
 .form input, .form textarea{
-  border: solid 2px #D68B30;
+  border: solid 2px var(--naranja);
   padding: 7px;
   margin: 10px 0;
   font-size: 18px;
@@ -230,8 +238,8 @@
 .form button{
   align-self: center;
   border-radius: 12px;
-  color: #D68B30;
-  border: solid #D68B30 2px;
+  color: var(--naranja);
+  border: solid var(--naranja) 2px;
   padding: 6px;
   margin: 10px 0;
   font-size: 22px;
@@ -239,7 +247,7 @@
   width: 100px;
 }
 .form button:hover{
-  background-color: #D68B30;
-  color: #F5E6C5;
+  background-color: var(--naranja);
+  color: var(--beige);
 }
 
