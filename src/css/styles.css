@@ -1,0 +1,193 @@
+#navbar{
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+#navbar.scrolled {
+  background-color: #F5E6C5 ;
+}
+
+#banner{
+  background-image: url("../../public/img/Detalles-06.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+#logo{
+  width: 24rem;
+  height: auto;
+  position: relative;
+  bottom: 48px;
+  
+}
+
+#logo img{
+  width: 100%;
+  height: auto;
+}
+#container-text-banner{
+  color: #F5E6C5;
+  text-align: center;
+}
+#container-text-banner h1{
+  font-size: 90px;
+  font-weight: 300;
+}
+#container-text-banner span{
+  font-weight: 600;
+}
+.about-us{
+  padding: 3rem 0;
+  background-color: #F5E6C5;
+  text-align: center;
+  color: #3F422F;
+}
+.about-us h2{
+  color: #D68B30;
+  font-size: 4rem;
+  line-height: 1.8;
+}
+.about-us p{
+  font-size: 34px;
+}
+.about-us div{
+  padding: 2rem 4rem;
+}
+#garden{
+  background-image: url("../../public/img/Detalles-07.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+#stats{
+  background-color: #3F422F;
+  padding: 4rem 8rem;
+  gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#stats-text{
+  color: #F5E6C5;
+  width: 48%;
+}
+#iframe{
+  width: 65%;
+  height: 28rem;
+}
+#iframe iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section {
+  padding: 2rem 0;
+  background-color:#F5E6C5 ;
+}
+
+.hero-section_title {
+  padding-top: 3rem;
+  font-size: 4rem;
+  line-height: 1.2;
+  text-align: center;
+  color:#D68B30 ;
+  font-weight: 400;
+}
+
+
+.hero-section_cards {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.hero-section_card {
+  min-height: 450px;
+  border-radius: 12px;
+}
+
+.hero-section_card_content {
+  padding: 1.6rem;
+  height: 100%;
+  opacity: 0;
+  background: RGBA(0,0,0,0.8);
+  color: #F5E6C5;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.hero-section_card_content:hover{
+  opacity: 1;
+}
+.hero-section_card_content > *{
+  transform: translateY(25px);
+  transition: transform 0.4s;
+}
+.hero-section_card_content:hover > *{
+  transform: translateY(0px);
+}
+
+.hero-section_card_content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.hero-section_card_content p{
+  font-size:22px ;
+  font-weight: 300;
+} 
+
+
+.card-1 {
+  background: url('https://images.pexels.com/photos/16957839/pexels-photo-16957839/free-photo-of-paisaje-hombre-granjero-retrato.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.card-2 {
+   background: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-3 {
+  background: url('https://images.pexels.com/photos/3019836/pexels-photo-3019836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.card-4 {
+  background: url('https://images.pexels.com/photos/696205/pexels-photo-696205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.labels{
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea{
+  border: solid 2px black;
+  padding: 7px;
+  margin: 10px 0;
+  font-size: 18px;
+  border-radius: 15px;
+}
