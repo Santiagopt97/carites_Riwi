@@ -209,6 +209,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--beige);
   display: flex;
   flex-direction: column;
@@ -232,11 +233,11 @@
 }
 
 .form input, .form textarea{
-  border: solid 2px var(--naranja);
   padding: 7px;
   margin: 10px 0;
   font-size: 18px;
   border-radius: 12px;
+  background-color: var(--beige);
 }
 .form button{
   align-self: center;
@@ -244,7 +245,7 @@
   color: var(--naranja);
   border: solid var(--naranja) 2px;
   padding: 6px;
-  margin: 10px 0;
+  margin: 15px 0 40px 0;
   font-size: 22px;
   font-weight: 700;
   width: 100px;
