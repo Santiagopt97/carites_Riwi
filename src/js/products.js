@@ -28,10 +28,23 @@ async function index(sectionProducts) {
                         <div class="price-info">
                             <button class="button-card-product"><b><a class="a-card-car" href="#">Agregar al
                                         Carrito</a></b></button>
-                            <button class="details-btn button-card-product"><b>Detalles</b></button>
+                                        <button class="details-btn button-card-product"
+                                        data-product='${JSON.stringify(product)}'><b>Detalles</b></button>
                         </div>
                 </div>
             </div>
         `;
+    });
+
+    document.querySelectorAll('.details-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const product = JSON.parse(this.getAttribute('data-product'));
+            document.getElementById('modal-product-image').src = product.linkProductImage;
+            document.getElementById('modal-product-name').innerText = product.productName;
+            document.getElementById('modal-product-description').innerText = product.productDescription;
+            document.getElementById('modal-product-price').innerText = `$ ${product.productPrice} COP`;
+            const myModal = new bootstrap.Modal(document.getElementById('product-modal'));
+            myModal.show();
+        });
     });
 }
