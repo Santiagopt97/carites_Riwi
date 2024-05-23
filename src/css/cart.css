@@ -1,0 +1,33 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* titulos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Textos */
+
+:root{
+    --beige: #FFEFCD;
+    --bg-green: #424530;
+}
+
+.bg-green{
+    background-color: var(--bg-green);
+    color: var(--beige);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cards{
+    position: relative;
+    left: 5%;
+    background-color: var(--beige);
+    
+}
+
+
+.image{
+    border-radius: 100%;
+    margin-top: 8%;
+    width: 60%;
+    height: 70%;
+}
+
+#borde{
+    border-bottom: 10px solid var(--bg-green);
+}
