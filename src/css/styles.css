@@ -1,10 +1,13 @@
+
 :root{
   --beige:#F5E6C5;
   --verde:#3F422F;
   --naranja:#D68B30;
 }
 
-
+*{
+  scroll-behavior: smooth;
+}
 
 #navbar{
   background-color: transparent;
