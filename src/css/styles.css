@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* variables */
+
 :root {
   --beige: #F5E6C5;
   --verde: #3F422F;
@@ -10,6 +12,8 @@
   scroll-behavior: smooth;
 }
   
+/* Header */
+
 #navbar{
   font-size: 19px;
   background-color: transparent;
@@ -70,6 +74,7 @@
   box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
   background-color: var(--naranja);
 }
+/* section banner */
 
 #banner {
   background-image: url("../../public/img/Detalles-06.png");
@@ -113,6 +118,7 @@
 #container-text-banner span {
   font-weight: 600;
 }
+/* section about us */
 
 .about-us {
   padding: 3rem 0;
@@ -142,6 +148,7 @@
   background-repeat: no-repeat;
   height: 80vh;
 }
+/* section stats */
 
 #stats{
   background-color: var(--verde);
@@ -166,6 +173,7 @@
   width: 100%;
   height: 100%;
 }
+/* section cards */
 
 .hero-section {
   padding: 2rem 0;
@@ -260,6 +268,8 @@
   background-position: center;
 }
 
+/* section contact us */
+
 .labels {
   display: flex;
   flex-direction: column;
@@ -321,6 +331,8 @@
   color: var(--beige);
 }
 
+/* Footer */
+
 #footer {
   background-color: var(--beige);
   color: var(--verde);
@@ -338,6 +350,7 @@
   font-size: 38px;
 }
 
+/* responsive */
 
 @media(max-width: 990px) {
 
