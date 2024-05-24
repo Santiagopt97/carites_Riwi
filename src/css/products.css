@@ -1,42 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-/* 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-} */
-
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Montserrat", sans-serif;
 }
-:root{
+
+.titles {
+  font-family: "Montserrat"
+}
+
+.paragraph {
+  font-family: "Open Sans"
+}
+
+:root {
   --dark-green: #134B42;
   --opaque-green: #80917D;
   --green-luminoso-claro: #AEBA8A;
   --mustard-yellow: #EEA83B;
   --opaque-orange: #CA763B;
-  --brown-yellow:#D68B30;
+  --brown-yellow: #D68B30;
   --cream: #F5E6C5;
   --olive-green: #3F422F;
 
 }
-h1, h2, h3, h4, h5{
-  font-family:"Montserrat"
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat"
 }
 
 body {
   background: var(--cream);
 }
-.section-top{
+
+.section-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +47,8 @@ body {
   font-size: larger;
   text-align: center;
 }
-main .section-products{
+
+main .section-products {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,19 +92,22 @@ main .section-products{
   height: 45px;
   line-height: 45px;
   color: var(--cream);
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, .4);
   text-align: center;
 }
-.face-card .back-card{
+
+.face-card .back-card {
   height: 100%;
 }
-.back-card #info-back-product{
+
+.back-card #info-back-product {
   max-height: 100%;
-  
+
 }
 
 .card-product .back-card {
-  transform: perspective(600px) rotateY(180deg);/* 180deg */
+  transform: perspective(600px) rotateY(180deg);
+  /* 180deg */
   background: var(--olive-green);
   padding: 15px;
   color: var(--green-luminoso-claro);
@@ -120,15 +126,18 @@ main .section-products{
   flex-direction: column;
   justify-content: center;
 }
-.card-product .back-card .price-info .h3-card-product{
+
+.card-product .back-card .price-info .h3-card-product {
   color: var(--brown-yellow);
   margin-top: 15px;
 }
-.card-product .back-card .price-info .button-card-product .a-card-car{
+
+.card-product .back-card .price-info .button-card-product .a-card-car {
   color: var(--cream);
   text-decoration: none;
   font-size: 15px;
 }
+
 .card-product .back-card .price-info .button-card-product {
   border-radius: 10px;
   background-color: var(--brown-yellow);
@@ -144,10 +153,10 @@ main .section-products{
   letter-spacing: 1px;
 }
 
-.card-product .back-card .p-card-product{
+.card-product .back-card .p-card-product {
   letter-spacing: 1px;
   font-size: 15px;
-} 
+}
 
 .card-product:hover .front-card {
   transform: perspective(600px) rotateY(180deg);
@@ -156,4 +165,57 @@ main .section-products{
 
 .card-product:hover .back-card {
   transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* Styles al modal */
+
+#product-modal .modal-content {
+  background-color: var(--cream);
+  color: var(--olive-green);
+}
+
+.modal-dialog {
+  width: 450px;
+
+}
+
+.modal-header {
+  padding-bottom: 0px;
+}
+
+.modal-title {
+  padding-top: 15px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+#modal-product-name {
+  text-transform: capitalize;
+  font-size: 40px;
+
+}
+
+#modal-info-content-all {
+  width: 100%;
+}
+
+#modal-info-content-all #content-image-modal {
+  min-width: 50%;
+}
+
+#modal-info-content-all .modal-detail-productl {
+  max-width: 100%;
+}
+
+#content-image-modal {
+  height: 200px;
+}
+
+#content-image-modal img {
+  margin-top: 25px;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+
 }
