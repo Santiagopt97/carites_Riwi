@@ -28,15 +28,7 @@
 #navbar.scrolled {
   background-color: var(--beige);
 }
-.register{
-  position: relative;
-  left: 25vw;
-}
-.login{
 
-  position: relative;
-  left: 37vw;
-}
 
 .register {
   cursor: pointer;
