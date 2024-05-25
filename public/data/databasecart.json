@@ -3,7 +3,7 @@
         {
             "id": "abc123",
             "productName": "lechuga",
-            "productDescription": "Lechuga crespa con algunas afectaciones",
+            "productDescription": "Lechuga crespa con algunas afectaciones ",
             "productQuantity": "6",
             "productPrice": "5000",
             "linkProductImage": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXLRNX5rQcbWp5_4urlC9oIfwlbp90JvTpbMknoK2oKFdd1mTR",
