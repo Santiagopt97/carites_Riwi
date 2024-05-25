@@ -12,9 +12,35 @@
 
 <body class="bg-green">
     <header>
+        <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 z-3 px-4" id="navbar">
+            <section class=" justify-content-center w-100 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <article class="collapse navbar-collapse" id="navbarNav">
+                    <div >
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="#about-us">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#stats">Problematica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#contact">Contactanos</a>
+                            </li>  
+                        </ul>
+                    </div>
 
+                    <div>
+                        <a class=" fw-bold btn btn-primary login " href="#registra">Ingresa</a>
+                        <a class=" fw-bold btn btn-primary register " href="#registra">Registrate</a>
+                    </div>
+                </article>
+            </section>
+        </nav>
     </header>
-
     <main>
         <h2 class="text-center ">Lista de intereses</h2>
         <section id="section">
@@ -27,9 +53,21 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="d-flex flex-wrap justify-content-around align-items-center p-4" id="footer">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="/public/img/Logo_Mesa de trabajo 1.png" alt="" class="img-footer">
+                
+            </a>
+            <span class="mb-3 mb-md-0 ">© 2024 Riwi Company</span>
+        </div>
 
-    </footer>
+        <ul class="nav col-md-4 mx-5 px-5  justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://x.com/?lang=en" target="_blank"><i class="bi bi-twitter-x" ></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
