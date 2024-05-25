@@ -7,27 +7,49 @@
     --bg-green: #424530;
 }
 
+.title{
+    font-family: 'Montserrat';
+}
+
+.paragraph{
+    font-family: 'Open Sans';
+    font-size: large;
+}
+
+
+
 .bg-green{
     background-color: var(--bg-green);
     color: var(--beige);
     font-family: 'Montserrat', sans-serif;
 }
 
+#section{
+    padding-bottom: 5%;
+}
+
+#article{
+    max-height: 100%;
+    max-width: 90%;
+}
+
+#card-id{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
 .cards{
     position: relative;
     left: 5%;
     background-color: var(--beige);
-    
 }
-
 
 .image{
+    min-height: 280px;
+    max-width: 280px;
     border-radius: 100%;
-    margin-top: 8%;
-    width: 60%;
-    height: 70%;
+    padding: 5%;
 }
 
-#borde{
-    border-bottom: 10px solid var(--bg-green);
-}
