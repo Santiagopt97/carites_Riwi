@@ -24,6 +24,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#navbar {
+    font-size: 19px;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    background-color: var(--beige);
+  }
+
+#navbarNav{
+    display: flex;
+    justify-content: space-between;
+}  
+  
+main{
+    margin-top: 4%;
+}
+
 #section{
     padding-bottom: 5%;
 }
@@ -53,3 +69,22 @@
     padding: 5%;
 }
 
+/* seccion del footer */
+
+#footer {
+    background-color: var(--beige);
+    color: var(--bg-green);
+    font-size: 18px;
+  
+  }
+  
+  .img-footer {
+    width: 80px;
+    border-radius: 50%;
+  
+  }
+  
+  .bi {
+    font-size: 38px;
+  }
+  
