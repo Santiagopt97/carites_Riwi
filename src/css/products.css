@@ -15,6 +15,7 @@
 }
 
 :root {
+
   --dark-green: #134B42;
   --opaque-green: #80917D;
   --green-luminoso-claro: #AEBA8A;
@@ -36,6 +37,74 @@ h5 {
 
 body {
   background: var(--cream);
+}
+
+#navbar {
+  font-size: 19px;
+  background-color: var(--cream);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 110px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  background-color: var(--brown-yellow);
+}
+
+.login {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 100px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+.position-a {
+  position: absolute;
+  right: 5vw;
+}
+
+.register:hover,
+.login:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: var(--brown-yellow);
+}
+
+
+@media(max-width: 990px) {
+
+  #navbarNav {
+    height: 170px;
+  }
+
+  #burguer {
+    position: relative;
+    left: 27%;
+  }
+
+  .position-a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    right: 0vw;
+  }
 }
 
 .section-top {
@@ -76,6 +145,7 @@ main .section-products {
 .card-product .front-card {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px var(--olive-green);
+  text-transform: capitalize;
 }
 
 .card-product .front-card .img-card-product {
@@ -107,7 +177,6 @@ main .section-products {
 
 .card-product .back-card {
   transform: perspective(600px) rotateY(180deg);
-  /* 180deg */
   background: var(--olive-green);
   padding: 15px;
   color: var(--green-luminoso-claro);
@@ -116,6 +185,7 @@ main .section-products {
   justify-content: space-between;
   text-align: center;
   box-shadow: 0 5px 10px var(--olive-green);
+  text-transform: capitalize;
 }
 
 .card-product .back-card .price-info {
@@ -138,7 +208,8 @@ main .section-products {
   font-size: 15px;
 }
 
-.card-product .back-card .price-info .button-card-product {
+.card-product .back-card .price-info .button-card-product,
+#footer-button-modal .button-card-product {
   border-radius: 10px;
   background-color: var(--brown-yellow);
   padding: 5px 10px;
@@ -166,7 +237,6 @@ main .section-products {
 .card-product:hover .back-card {
   transform: perspective(600px) rotateY(360deg);
 }
-
 
 /* Styles al modal */
 
@@ -205,7 +275,7 @@ main .section-products {
 }
 
 #modal-info-content-all .modal-detail-productl {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 #content-image-modal {
@@ -217,5 +287,27 @@ main .section-products {
   height: 100%;
   border-radius: 25px;
   object-fit: cover;
+  box-shadow: 0 5px 10px var(--olive-green);
 
+}
+
+#footer-button-modal {
+  display: flex;
+  justify-content: center;
+
+}
+
+#footer {
+  background-color: var(--beige);
+  color: var(--bg-green);
+  font-size: 18px;
+}
+
+.img-footer {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.bi {
+  font-size: 38px;
 }
