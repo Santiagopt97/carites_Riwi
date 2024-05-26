@@ -16,7 +16,7 @@ async function index(sectionProducts) {
                 </div>
                 <div class="face-card back-card" id="info-back-product">
                         <div>
-                            <h3 class="h3-card-product">${product.productName}</h3>
+                            <h3 class="h3-card-product" id="h3-card-product">${product.productName}</h3>
                             <p class="p-card-product">${product.productDescription}</p>
                         </div>
                         <div class="price-info">
@@ -39,6 +39,9 @@ async function index(sectionProducts) {
             document.getElementById('modal-product-name').innerText = product.productName;
             document.getElementById('modal-product-description').innerText = product.productDescription;
             document.getElementById('modal-product-price').innerText = `$ ${product.productPrice} COP`;
+            document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
+            document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
+            document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
             const myModal = new bootstrap.Modal(document.getElementById('product-modal'));
             myModal.show();
         });
