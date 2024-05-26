@@ -20,7 +20,7 @@ async function index() {
                         </div>
                         <div class="d-flex justify-content-between ">
                             <div>
-                                <button type="button" data-id=${element.id} class="btn btn-warning">Whatsapp</button>
+                                <a><i class="bi bi-whatsapp"></i></a>
                                 <button type="button" data-id=${element.id} class="btn btn-danger">Telefono</button>
                             </div>
                             
