@@ -209,6 +209,9 @@ p a:hover {
   padding: 3rem 0;
   background-color: var(--beige);
   text-align: center;
+}
+
+.about-us p{
   color: var(--verde);
 }
 
