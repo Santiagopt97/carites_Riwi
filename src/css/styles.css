@@ -1,0 +1,496 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* variables */
+
+:root {
+  --beige: #F5E6C5;
+  --verde: #3F422F;
+  --naranja: #D68B30;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+#navbar{
+  font-size: 19px;
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#navbar.scrolled {
+  background-color: var(--beige);
+}
+
+
+.register {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 110px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  background-color: var(--naranja);
+}
+
+.login {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 100px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  box-decoration-break: slice;
+}
+
+.form-control {
+  background-color: #F5E6C5;
+  padding-left: 10px;
+  border: 2px solid #D68B30;
+  border-radius: 15px;
+}
+
+.form-control:hover {
+  color: #D68B30;
+}
+
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #D68B30;
+  color: #F5E6C5;
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+
+.myform #btn-init-sesion:hover {
+  background-color: #F5E6C5;
+  color: #3F422F;
+  border-radius: 15px;
+  border: #D68B30 2px solid;
+  font-size: 1.2em;
+  font-weight: bold
+}
+
+p {
+  text-align: center;
+  padding-top: 2em;
+  color: #F5E6C5;
+}
+
+p a {
+  color: #D68B30;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #D68B30;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#bg-fooondo-form {
+  background: #3F422F;
+  color: #F5E6C5;
+  border-radius: 15px;
+}
+
+#input-email-login,
+#input-password-login {
+  background: #F5E6C5;
+  color: #3F422F;
+}
+
+#btn-init-sesion {
+  border-radius: 15px;
+  border: 2px solid #F5E6C5;
+}
+
+.position-a {
+  position: absolute;
+  right: 5vw;
+}
+
+.register:hover,
+.login:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: var(--naranja);
+}
+
+/* section banner */
+
+#banner {
+  background-image: url("../../public/img/Detalles-06.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#logo {
+  width: 24rem;
+  height: auto;
+  position: relative;
+  bottom: 48px;
+
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+#container-text-banner {
+  color: var(--beige);
+  text-align: center;
+  width: 100%;
+  padding: 0 30px;
+}
+
+#container-text-banner h1 {
+  font-size: 90px;
+  font-weight: 300;
+}
+
+#container-text-banner span {
+  font-weight: 600;
+}
+
+/* section about us */
+
+.about-us {
+  padding: 3rem 0;
+  background-color: var(--beige);
+  text-align: center;
+}
+
+.about-us p{
+  color: var(--verde);
+}
+
+.about-us h2 {
+  color: var(--naranja);
+  font-size: 4rem;
+  line-height: 1.8;
+}
+
+.about-us p {
+  font-size: 34px;
+}
+
+.about-us div {
+  padding: 2rem 4rem;
+}
+
+#garden {
+  background-image: url("../../public/img/Detalles-07.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+/* section stats */
+
+#stats {
+  background-color: var(--verde);
+  padding: 4rem 8rem;
+  gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#stats-text {
+  color: var(--beige);
+  width: 48%;
+}
+
+#iframe {
+  width: 65%;
+  height: 28rem;
+}
+
+#iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* section cards */
+
+.hero-section {
+  padding: 2rem 0;
+  background-color: var(--beige);
+}
+
+.hero-section_title {
+  padding-top: 3rem;
+  font-size: 4rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #D68B30;
+  font-weight: 400;
+}
+
+
+.hero-section_cards {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.hero-section_card {
+  min-height: 450px;
+  border-radius: 12px;
+}
+
+.hero-section_card_content {
+  padding: 1.6rem;
+  height: 100%;
+  opacity: 0;
+  background: RGBA(0, 0, 0, 0.8);
+  color: var(--beige);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.hero-section_card_content:hover {
+  opacity: 1;
+}
+
+.hero-section_card_content>* {
+  transform: translateY(25px);
+  transition: transform 0.4s;
+}
+
+.hero-section_card_content:hover>* {
+  transform: translateY(0px);
+}
+
+.hero-section_card_content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.hero-section_card_content p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
+.card-1 {
+  background: url('https://images.pexels.com/photos/16957839/pexels-photo-16957839/free-photo-of-paisaje-hombre-granjero-retrato.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.card-2 {
+  background: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 {
+  background: url('https://images.pexels.com/photos/3019836/pexels-photo-3019836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.card-4 {
+  background: url('https://images.pexels.com/photos/696205/pexels-photo-696205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* section contact us */
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  background-image: url(../../public/img/Detalles-17.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  padding: 42px 0 10px 0;
+}
+
+.contenedor-contacto {
+  width: 50vw;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  padding: 7px;
+  margin: 10px 0;
+  font-size: 18px;
+  border-radius: 12px;
+  background-color: var(--beige);
+}
+
+.form button {
+  align-self: center;
+  border-radius: 12px;
+  color: var(--naranja);
+  border: solid var(--naranja) 2px;
+  padding: 6px;
+  margin: 15px 0 40px 0;
+  font-size: 22px;
+  font-weight: 700;
+  width: 100px;
+}
+
+.form button:hover {
+  background-color: var(--naranja);
+  color: var(--beige);
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--beige);
+  color: var(--verde);
+  font-size: 18px;
+
+}
+
+.img-footer {
+  width: 80px;
+  border-radius: 50%;
+
+}
+
+.bi {
+  font-size: 38px;
+}
+
+/* responsive */
+
+@media (max-width: 576px) {
+  .myform {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 990px) {
+
+
+  .position-a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    right: 0vw;
+  }
+
+  #stats {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #stats-text {
+    width: 100%;
+  }
+
+  #iframe {
+    width: 100%;
+    height: 20rem;
+  }
+}
+
+@media(max-width: 600px) {
+  #container-text-banner h1 {
+    font-size: 50px;
+  }
+
+  #stats {
+    padding: 10%;
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 420px) {
+  #container-text-banner h1 {
+    font-size: 40px;
+  }
+}

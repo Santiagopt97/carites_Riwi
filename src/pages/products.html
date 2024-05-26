@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/products.css">
+    <title>Productos Carites</title>
+</head>
+
+<body>
+    <header>
+        <header id="header">
+            <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 z-3 px-4" id="navbar">
+                <section class=" justify-content-center  ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="burguer">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <article class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="/">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="...">Favoritos</a>
+                            </li>
+                        </ul>
+                        <div class="position-a">
+                            <button class="login " href="#registra">Ingresa</button>
+                            <button class="register " href="#registra">Registrate</button>
+                        </div>
+                    </article>
+                </section>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <section class="section-top">
+            <h1>Bienvenidos!</h1>
+            <p><b>¡Únete a nosotros y sé parte de un futuro más
+                    sostenible!</b><br>Aquí encontrarás productos agrícolas nutritivos y perfectos para cualquier uso.
+                <br>
+                <b>Tú apoyo contribuye a la reducción de desperdicios y a la sostenibilidad del campo.</b>
+            </p>
+        </section>
+        <section class="section-products">
+
+        </section>
+
+        <section class="modal-product">
+
+            <div class="modal fade show" id="product-modal" tabindex="-1" aria-labelledby="product-modal-label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl" style="width: 520px; margin-top: 100px;">
+                    <div class="modal-content">
+                        <div class="modal-header ">
+                            <h5 class="modal-title " id="product-modal-label">Detalles de Producto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body d-flex g-3" id="modal-info-content-all">
+                            <div class="text-center pe-5" id="content-image-modal">
+                                <img id="modal-product-image" src="" alt="Producto" class="img-fluid"
+                                    style="width: 250px;">
+                            </div>
+                            <div class="modal-detail-product">
+                                <h5 id="modal-product-name" class="mt-3"></h5>
+                                <p id="modal-product-description"></p>
+                                <div>
+                                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                </div>
+                                <p id="modal-product-price" class="m-1 p-2"></p>
+                                <div class="modal-footer" id="footer-button-modal">
+                                    <button type="button" class="btn btn-primary button-card-product">Agregar a
+                                        favoritos</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>va ir nombre agricultor</h5>
+                            <p>ubicacion
+                                contacto btn-wpp btn-tel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-around align-items-center p-4" id="footer">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="/public/img/Logo_Mesa de trabajo 1.png" alt="" class="img-footer">
+
+            </a>
+            <span class="mb-3 mb-md-0 ">© 2024 Riwi Company</span>
+        </div>
+
+        <ul class="nav col-md-4 mx-5 px-5  justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank"><i
+                        class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://x.com/?lang=en" target="_blank"><i
+                        class="bi bi-twitter-x"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank"><i
+                        class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../js/products.js"></script>
+</body>
+
+</html>
