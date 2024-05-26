@@ -7,7 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/products.css">
-    <title>Productos Carites</title>
+
+    <title>Tarjetas de Productos</title>
 </head>
 
 <body>
@@ -30,8 +31,10 @@
                             </li>
                         </ul>
                         <div class="position-a">
-                            <button class="login " href="#registra">Ingresa</button>
-                            <button class="register " href="#registra">Registrate</button>
+                            <ul>
+                                <a href="#" target="_blank"><i
+                                        class="bi bi-bag-heart-fill nav-link" id="fav-cart"></i><span></span></a>
+                            </ul>
                         </div>
                     </article>
                 </section>
@@ -58,7 +61,7 @@
                 <div class="modal-dialog modal-xl" style="width: 520px; margin-top: 100px;">
                     <div class="modal-content">
                         <div class="modal-header ">
-                            <h5 class="modal-title " id="product-modal-label">Detalles de Producto</h5>
+                            <h5 class="modal-title" id="product-modal-label">Detalles de Producto</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                         </div>
                         <div class="modal-body d-flex g-3" id="modal-info-content-all">
@@ -67,24 +70,38 @@
                                     style="width: 250px;">
                             </div>
                             <div class="modal-detail-product">
-                                <h5 id="modal-product-name" class="mt-3"></h5>
-                                <p id="modal-product-description"></p>
-                                <div>
-                                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                                <h5 id="modal-product-name" class="mt-0 fw-bold"></h5>
+                                <p id="modal-product-description" class="p-0 m-0"></p>
+                                <div class="text-center m-0">
+                                    <span class="text-warning p-0 m-0 fs-2">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                                 </div>
-                                <p id="modal-product-price" class="m-1 p-2"></p>
-                                <div class="modal-footer" id="footer-button-modal">
-                                    <button type="button" class="btn btn-primary button-card-product">Agregar a
+                                <p id="modal-product-price" class="m-1 p-0 fw-bold fs-2 text-center"></p>
+                                <div class="text-center" >
+                                    <button type="button" class="btn btn-primary fw-bold" id="button-card-product">Agregar a
                                         favoritos</button>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <h5>va ir nombre agricultor</h5>
-                            <p>ubicacion
-                                contacto btn-wpp btn-tel
-                            </p>
-                        </div>
+                        <article class="modal-footer" id="footer-info-modal" >
+                            <ul id="ul-description-owner">
+                                <h5 class="m-1 text-capitalize fw-bold" id="modal-owner-name"></h5>
+                                <h5 class="m-1 text-capitalize fw-bold" id="modal-owner-lastname"></h5>
+                                <h5 class="m-1 text-capitalize fst-italic">Direccion </h5>
+                                <h5 class="m-1 text-capitalize fw-bold" id="modal-owner-town"></h5>
+                                <h5 class="m-1 text-capitalize fst-italic">(Ant) </h5>
+                            </ul>
+                            <ul id="ul-contact-owner">
+                                <a href="mailto:formacion@riwi.io" target="_blank" ><i
+                                        class="bi bi-envelope-fill fs-2 color-icon-detail"></i></a>
+                                <a href="tel: +3243812089" target="_blank"><i 
+                                        class="bi bi-telephone-fill fs-2 color-icon-detail"></i></a>
+                                <a
+                                    href="https:wa.me/573017325327/?text=Buen día TransRiwi! Me gustaría conocer más información acerca de la plataforma de " ><img id="wpp-detail-modal"
+                                        src="/public\icons\whatsapp.webp" width="40px" height="40px"
+                                        border-radius="50px" alt="Icono de whatsapp">
+                                </a>
+                            </ul>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -110,6 +127,7 @@
                         class="bi bi-instagram"></i></a></li>
         </ul>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
