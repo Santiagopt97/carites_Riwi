@@ -18,11 +18,20 @@ async function index() {
                             <p class="card-text paragraph text-capitalize">${element.productDescription}</p>
                             <p class="card-text paragraph ">${element.productPrice}</p>
                         </div>
-                        <div class="d-flex justify-content-between ">
+                        <div class="d-flex justify-content-between flex-row-reverse">
                             <div>
-                                <a><i class="bi bi-whatsapp"></i></a>
-                                <button type="button" data-id=${element.id} class="btn btn-danger">Telefono</button>
-                            </div>
+                            <ul id="ul-contact-owner">
+                            <a href="mailto:${element.ownerAgricola.ownerEmail}" target="_blank" ><i
+                                    class="bi bi-envelope-fill fs-2 color-icon-detail"></i></a>
+                            <a href="tel: +${element.ownerAgricola.ownerPhoneNumber}" target="_blank"><i 
+                                    class="bi bi-telephone-fill fs-2 color-icon-detail"></i></a>
+                                    <a
+                                    href="https:wa.me/${element.ownerAgricola.ownerNumberWhatsapp}/?text=Buen día vengo de Carites! Me gustaría saber mas de tus productos "><img
+                                        id="wpp-detail-modal" src="../../public/icons/whatsapp.webp" width="40px" height="40px"
+                                        border-radius="50px" alt="Icono de whatsapp" class="me-5 mb-3">
+                                </a>
+                            </ul>
+                        </div>
                             
                             <div>
                                 <button type="button" data-id=${element.id} class="btn btn-danger">Delete</button>
@@ -36,3 +45,4 @@ async function index() {
 }
 
 index()
+

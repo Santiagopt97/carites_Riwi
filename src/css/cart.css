@@ -117,6 +117,14 @@ main{
     padding: 5%;
 }
 
+.color-icon-detail{
+    color: var(--naranja);
+  }
+  #wpp-detail-modal{
+    border-radius: 50px;
+    
+  }
+
 
 
 /* seccion del footer */
