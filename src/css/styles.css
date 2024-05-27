@@ -55,6 +55,10 @@
   transition: 0.4s;
 }
 
+#link-ingreso{
+  text-decoration: none;
+  color: var(--beige);
+}
 
 .modal-content {
   width: 80%;
