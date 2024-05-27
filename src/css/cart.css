@@ -119,11 +119,20 @@ main{
 
 .color-icon-detail{
     color: var(--naranja);
+}
+#wpp-detail-modal{
+    border-radius: 50px;    
+}
+
+#ul-contact-owner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+    align-items: center;
+    gap: 20px;
   }
-  #wpp-detail-modal{
-    border-radius: 50px;
-    
-  }
+
 
 
 
@@ -146,11 +155,25 @@ main{
     font-size: 38px;
   }
   
+  @media(max-width: 1300px) {
+
+    main{
+        margin-top: 70px;
+    }
+
+    #navbarNav{
+        height: 40px;
+    }
+  }
 
   @media(max-width: 990px) {
 
+    main{
+        margin-top: 70px;
+    }
+
     #navbarNav{
-        height: 170px;
+        height: 80px;
     }
 
     #burguer{
@@ -165,4 +188,36 @@ main{
       gap: 30px;
       right: 0vw;
     }
+  }
+
+  @media(max-width: 900px) {
+
+    .image{
+        min-height: 240px;
+        max-height: 240px;
+        max-width: 240px;
+        min-width: 240px;
+        border-radius: 100%;
+        padding: 5%;
+    }
+
+  }
+
+  @media(max-width: 767px) {
+
+    .image{
+        min-height: 280px;
+        max-height: 280px;
+        max-width: 280px;
+        min-width: 280px;
+        border-radius: 100%;
+        padding: 5%;
+    }
+  }
+
+  @media(max-width: 374px) {
+    #wpp-detail-modal{
+        width: 25px;
+    }
+    
   }

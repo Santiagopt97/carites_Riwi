@@ -13,28 +13,34 @@ async function index() {
                         <img src="${element.linkProductImage}" class='img-fluid ms-3 image' alt="${element.productName}">
                     </div>
                     <div id="text-card" class="col-md-8">
-                        <div class="card-body d-flex flex-column justify-content-center ">
-                            <h2 id="titulo" class="card-title title text-capitalize ">${element.productName}</h2>
-                            <p class="card-text paragraph text-capitalize">${element.productDescription}</p>
-                            <p class="card-text paragraph ">${element.productPrice}</p>
+                        <div class="d-flex justify-content-around w-100">
+                            <div class="card-body d-flex flex-column  w-50">
+                                <h2 id="titulo" class="card-title title text-capitalize ">${element.productName}</h2>
+                                <p class="card-text paragraph text-capitalize">${element.productDescription}</p>
+                                <p class="card-text paragraph ">${element.productPrice}</p>
+                            </div>
+                            <div class="card-body d-flex flex-column  w-50">
+                                <h2 id="titulo" class="card-title title text-capitalize ">${element.ownerAgricola.ownerName} ${element.ownerAgricola.ownerLastName}</h2>
+                                <p class="card-text paragraph text-capitalize"><i class="bi bi-geo-alt-fill"></i> ${element.ownerAgricola.ownerTown}</p>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-between flex-row-reverse">
-                            <div>
-                            <ul id="ul-contact-owner">
+                        <div class="d-flex justify-content-end flex-row-reverse w-100 border-0">
+                            <div id="logos-card w-50">
+                            <ul id="ul-contact-owner pl-0">
                             <a href="mailto:${element.ownerAgricola.ownerEmail}" target="_blank" ><i
                                     class="bi bi-envelope-fill fs-2 color-icon-detail"></i></a>
                             <a href="tel: +${element.ownerAgricola.ownerPhoneNumber}" target="_blank"><i 
                                     class="bi bi-telephone-fill fs-2 color-icon-detail"></i></a>
                                     <a
                                     href="https:wa.me/${element.ownerAgricola.ownerNumberWhatsapp}/?text=Buen día vengo de Carites! Me gustaría saber mas de tus productos "><img
-                                        id="wpp-detail-modal" src="../../public/icons/whatsapp.webp" width="40px" height="40px"
+                                        id="wpp-detail-modal" src="../../public/icons/whatsapp.webp" width="30px" height="35px"
                                         border-radius="50px" alt="Icono de whatsapp" class="me-5 mb-3">
                                 </a>
                             </ul>
                         </div>
                             
-                            <div>
-                                <button type="button" data-id=${element.id} class="btn btn-danger">Delete</button>
+                            <div class="w-50">
+                                <button type="button" data-id=${element.id} class="btn btn-danger ms-3">Delete</button>
                             </div>
                         </div>
                     </div>
