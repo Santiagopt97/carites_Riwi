@@ -86,7 +86,7 @@ p{
 
 
 .hero {
-   min-height: 60vh;
+   min-height: 90vh;
    position: relative;
    border-radius: 0 0 350px 0;
    background-color: var(--dark-green);
@@ -112,7 +112,7 @@ video {
 .welcome {
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 8%;
     color: var(--cream);
     
 }
@@ -285,17 +285,21 @@ video {
 
 #parragraf {
 
-    width: 480px;
-    font-weight: 400;
+    width: 580px;
+    font-weight: 300;
     text-align: center;
     align-items: center;
     margin-left: 80px;
     color: var(--cream);
 }
 
+#parragraf-2{
+    color: var(--cream);
+}
+
 #title-manual {
     position: absolute;
-    top: 105%;
+    top: 145%;
     color: var(--cream);
 }
 
