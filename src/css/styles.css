@@ -84,30 +84,30 @@ h1 {
 }
 
 .form-control {
-  background-color: #F5E6C5;
+  background-color: var(--beige);
   padding-left: 10px;
-  border: 2px solid #D68B30;
+  border: 2px solid   var(--naranja);
   border-radius: 15px;
 }
 
 .form-control:hover {
-  color: #D68B30;
+  color: var(--naranja);
 }
 
 .myform .btn {
   width: 100%;
   font-weight: 800;
-  background-color: #D68B30;
-  color: #F5E6C5;
+  background-color: var(--naranja);
+  color: var(--beige);
   border-radius: 0;
   padding: 0.5em 0;
 }
 
 .myform #btn-init-sesion:hover {
-  background-color: #F5E6C5;
-  color: #3F422F;
+  background-color: var(--beige);
+  color: var(--verde);
   border-radius: 15px;
-  border: #D68B30 2px solid;
+  border: var(--naranja) 2px solid;
   font-size: 1.2em;
   font-weight: bold
 }
@@ -115,35 +115,39 @@ h1 {
 p {
   text-align: center;
   padding-top: 2em;
-  color: #F5E6C5;
+  color: var(--beige);
 }
 
 p a {
-  color: #D68B30;
+  color: var(--naranja)!important;
   text-decoration: none;
 }
 
 p a:hover {
-  color: #D68B30;
+  color: var(--naranja);
   font-weight: bold;
   font-size: 1.2em;
 }
+.link-terms-register{
+  color: var(--naranja)!important;
+  text-decoration: none;
+}
 
 #bg-fooondo-form {
-  background: #3F422F;
-  color: #F5E6C5;
+  background: var(--verde);
+  color: var(--beige);
   border-radius: 15px;
 }
 
 #input-email-login,
 #input-password-login {
-  background: #F5E6C5;
-  color: #3F422F;
+  background: var(--beige);
+  color: var(--verde);
 }
 
 #btn-init-sesion {
   border-radius: 15px;
-  border: 2px solid #F5E6C5;
+  border: 2px solid var(--beige);
 }
 
 .position-a {
