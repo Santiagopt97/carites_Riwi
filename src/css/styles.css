@@ -146,8 +146,13 @@ p a:hover {
 }
 
 #btn-init-sesion {
+  cursor: pointer;
   border-radius: 15px;
   border: 2px solid var(--beige);
+}
+
+.text-init-login{
+  cursor: pointer;
 }
 
 .position-a {
