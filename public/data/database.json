@@ -190,23 +190,6 @@
       }
     },
     {
-      "id": "jkl012",
-      "productName": "papa",
-      "productDescription": "Papa criolla de alta calidad",
-      "productQuantity": "20",
-      "productPrice": "12000",
-      "linkProductImage": "https://thefoodtech.com/wp-content/uploads/2023/09/planta-papa-organica-fresca-campo.jpg",
-      "ownerAgricola": {
-        "ownerName": "ana",
-        "ownerLastName": "perez",
-        "ownerDocument": "101010258",
-        "ownerTown": "apartadó",
-        "ownerPhoneNumber": "3135678901",
-        "ownerEmail": "ana.perez@gmail.com",
-        "ownerNumberWhatsapp": "573135678901"
-      }
-    },
-    {
       "id": "def456",
       "productName": "tomate",
       "productDescription": "Tomate cherry orgánico, fresco y jugoso",
@@ -224,23 +207,6 @@
       }
     },
     {
-      "id": "vwx234",
-      "productName": "fresa",
-      "productDescription": "Fresas dulces y jugosas",
-      "productQuantity": "24",
-      "productPrice": "20000",
-      "linkProductImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0M0v4GGUQhBEi661wiOuSdtaRhR91LnRhQYlChgRpsnWS1jQuiCrCYOYzViovnBs7o-8&usqp=CAU",
-      "ownerAgricola": {
-        "ownerName": "javier",
-        "ownerLastName": "moreno",
-        "ownerDocument": "101010262",
-        "ownerTown": "peñol",
-        "ownerPhoneNumber": "3176543210",
-        "ownerEmail": "javier.moreno@gmail.com",
-        "ownerNumberWhatsapp": "573176543210"
-      }
-    },
-    {
       "id": "abc123",
       "productName": "lechuga",
       "productDescription": "Lechuga crespa con algunas afectaciones",
@@ -255,23 +221,6 @@
         "ownerPhoneNumber": "3243812089",
         "ownerEmail": "espruebaemail@gmail.com",
         "ownerNumberWhatsapp": "573243812089"
-      }
-    },
-    {
-      "id": "mno345",
-      "productName": "cebolla",
-      "productDescription": "Cebolla cabezona blanca, ideal para ensaladas",
-      "productQuantity": "8",
-      "productPrice": "6000",
-      "linkProductImage": "https://www.infocampo.com.ar/wp-content/uploads/2019/02/5-Consejos-Para-Cultivar-Grandes-Cebollas.gif",
-      "ownerAgricola": {
-        "ownerName": "luis",
-        "ownerLastName": "rodriguez",
-        "ownerDocument": "101010259",
-        "ownerTown": "san roque",
-        "ownerPhoneNumber": "3123456789",
-        "ownerEmail": "luis.rodriguez@gmail.com",
-        "ownerNumberWhatsapp": "573123456789"
       }
     }
   ]
