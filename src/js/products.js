@@ -1,4 +1,4 @@
-const URL_API = `http://localhost:3000/agriculturalProducts`
+const URL_API = `http://localhost:3000/user`
 const sectionProducts = document.querySelector(".section-products")
 
 index(sectionProducts);
@@ -11,16 +11,16 @@ async function index(sectionProducts) {
         sectionProducts.innerHTML += `
             <div class="card-product">
                 <div class="face-card front-card">
-                    <img class="img-card-product" src="${product.linkProductImage}" alt="">
-                    <h3 class="h3-card-product">${product.productName}</h3>
+                    <img class="img-card-product" src="${product.sale.linkProductImage}" alt="">
+                    <h3 class="h3-card-product">${product.sale.productName}</h3>
                 </div>
                 <div class="face-card back-card" id="info-back-product">
                         <div>
-                            <h3 class="h3-card-product" id="h3-card-product">${product.productName}</h3>
-                            <p class="p-card-product">${product.productDescription}</p>
+                            <h3 class="h3-card-product" id="h3-card-product">${product.sale.productName}</h3>
+                            <p class="p-card-product">${product.sale.productDescription}</p>
                         </div>
                         <div class="price-info">
-                            <h3 class="h3-card-product"><span>$ </span>${product.productPrice}<span> COP </span></h3>
+                            <h3 class="h3-card-product"><span>$ </span>${product.sale.productPrice}<span> COP </span></h3>
                             <p class="p-card-product">Kilo</p>
                         </div>
                         <div class="price-info">
@@ -35,17 +35,17 @@ async function index(sectionProducts) {
     document.querySelectorAll('.details-btn').forEach(button => {
         button.addEventListener('click', function () {
             const product = JSON.parse(this.getAttribute('data-product'));
-            document.getElementById('modal-product-image').src = product.linkProductImage;
-            document.getElementById('modal-product-name').innerText = product.productName;
-            document.getElementById('modal-product-description').innerText = product.productDescription;
-            document.getElementById('modal-product-price').innerText = `$ ${product.productPrice} COP`;
-            document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
-            document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
-            document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
+            document.getElementById('modal-product-image').src = product.sale.linkProductImage;
+            document.getElementById('modal-product-name').innerText = product.sale.productName;
+            document.getElementById('modal-product-description').innerText = product.sale.productDescription;
+            document.getElementById('modal-product-price').innerText = `$ ${product.sale.productPrice} COP`;
+            document.getElementById('modal-owner-name').innerText = product.ownerName;
+            document.getElementById('modal-owner-lastname').innerText = product.ownerLastName;
+            document.getElementById('modal-owner-town').innerText = product.ownerTown;
 
-            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerAgricola.ownerEmail}`;
-            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerAgricola.ownerPhoneNumber}`;
-            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerAgricola.ownerNumberWhatsapp}`;
+            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerEmail}`;
+            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerPhoneNumber}`;
+            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerNumberWhatsapp}`;
 
 
             const myModal = new bootstrap.Modal(document.getElementById('product-modal'));

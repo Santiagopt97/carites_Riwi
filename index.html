@@ -60,19 +60,19 @@
                                 aria-label="Close"></button>
                             <div class="myform " id="bg-fooondo-form">
                                 <h1 class="text-center">Iniciar Sesión</h1>
-                                <form>
+                                <form id="form-login">
                                     <div class="mb-3 mt-4">
                                         <label for="input-email-login" class="form-label">Usuario</label>
-                                        <input type="email" class="form-control input-email-login" id=""
+                                        <input type="email" class="form-control input-email-login" id="email-login"
                                             aria-describedby="email-help" placeholder="usuario">
                                     </div>
                                     <div class="mb-3">
                                         <label for="input-password-login" class="form-label">Contraseña</label>
-                                        <input type="password" class="form-control input-password-login" id=""
+                                        <input type="password" class="form-control input-password-login" id="password-login"
                                             placeholder="contraseña">
                                     </div>
                                     <button type="submit" class="btn mt-3" id="btn-init-sesion"><a id="link-ingreso"
-                                            href="./src/pages/users.html">Ingresar</a></button>
+                                            >Ingresar</a></button>
                                     <p><i>¿No tienes cuenta? <br><b><a class="text-init-login"
                                                     data-bs-target="#modal-form-register"
                                                     data-bs-toggle="modal">Registrate</a></b></i></p>
@@ -96,7 +96,7 @@
                                 aria-label="Close"></button>
                             <div class="myform " id="bg-fooondo-form">
                                 <h1 class="text-center">Registrate</h1>
-                                <form id="our-form">
+                                <form id="form-register">
                                     <div class="mb-2 mt-2" id="name-lastname">
                                         <div class="name-column">
                                             <label for="input-email-login" class="form-label">Nombre</label>
@@ -269,13 +269,14 @@
                                         <label for="terms-conditions-user">Términos y condiciones</label><br>
                                         <span>
                                             <input type="checkbox" name="aceptoterminos" id="terms-conditions-user"
-                                                required value="Acepto">Acepto
+                                                 value="Acepto">Acepto
                                             <a class="link-terms-register"
                                                 href="https://drive.google.com/file/d/1Wfi9-002WMy5V-mFDkrriIbzqypehUbb/view"
                                                 target="_blank">los términos y condiciones</a>
                                         </span>
                                     </div>
-                                    <button type="submit" class="btn mt-3" id="btn-init-sesion">Registrate</button>
+                                    <button type="submit" class="btn mt-3" id="btn-init-sesion"><a id="link-ingreso"
+                                        >Registrate</a></button>
                                     <p><i>¿Ya tienes una cuenta? <br><b><a class="text-init-login"
                                                     data-bs-target="#modal-form" data-bs-toggle="modal">Ingresa
                                                     aquí</a></b></i></p>
@@ -432,6 +433,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="./src/js/main.js"></script>
+    <script  type="module" src="./src/js/register.js"></script>
+    <script  type="module" src="./src/js/login.js"></script>
 </body>
 
 </html>

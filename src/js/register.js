@@ -1,4 +1,4 @@
-const form = document.getElementById("our-form")
+const form = document.getElementById("form-register")
 const username = document.getElementById("username")
 const lastName = document.getElementById("last-name")
 const tel = document.getElementById("tel")
@@ -10,16 +10,20 @@ const password = document.getElementById("password")
 const confirmPassword = document.getElementById("confirm-password")
 
 form.addEventListener("submit", async (event) => {
+
     event.preventDefault()
     const checkPassword = validatePasswords(password, confirmPassword)
     const checkEmail = await validateEmail(email)
-
+    window.location.href = "./src/pages/users.html"
+    console.log("melo");
+    await registerUser(username, lastName, email, password, tel, whatsapp, cedula, ubication)
     if(checkPassword === true && checkEmail === true){
-        await registerUser(username, lastName, email, password, tel, whatsapp, cedula, ubication)
-        window.location.href = "/src/pages/users.html"
+   
+        
      }else{
        alert("las contraseñas no coinciden o el email ya existe")
      }
+
 })
 
 function validatePasswords(password, confirmPassword) {
@@ -53,9 +57,8 @@ async function registerUser (username, lastName, email, password, tel, whatsapp,
         ownerNumberWhatsapp: whatsapp.value,
         ownerEmail: email.value,
         ownerPassword: password.value
-      
     }
-    const response = await fetch("http://localhost:3000/agriculturalProducts", {
+    await fetch("http://localhost:3000/user", {
         method: "POST",
         body: JSON.stringify(newUser),
         headers: {

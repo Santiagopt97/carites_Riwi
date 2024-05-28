@@ -108,9 +108,8 @@ h1 {
   padding: 0.5em 0;
 }
 
-.myform #btn-init-sesion:hover {
-  background-color: var(--beige);
-  color: var(--verde);
+#btn-init-sesion:hover {
+
   border-radius: 15px;
   border: var(--naranja) 2px solid;
   font-size: 1.2em;
