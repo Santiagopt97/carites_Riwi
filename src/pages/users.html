@@ -12,8 +12,9 @@
 
 <body>
     <div class="nav-pages">
-        <a href="/">Inicio</a>
-        <a href="./products.html">Productos</a>
+        <a href="">Inicio</a>
+        <a href="">Productos</a>
+        <a href=""></a>
     </div>
     <header class="head">
         <div class="i">
@@ -91,225 +92,43 @@
 
     <section class="access">
 
-        <form id="form-create">
-
-            <h2 id="parragraf-2">Crear Producto</h2>
-
-            <div id="name-f">
-                <h4>Producto</h4>
-                <label for="name-product"></label>
-                <input type="text" name="name-product" id="name-product" required>
-            </div>
-
-            <div id="price">
-                <h4>Precio</h4>
-                <label for="price"></label>
-                <input type="number" min="0" placeholder="Ingrese el Valor en COP" required>
-            </div>
-
-            <div id="amount">
-                <h4>Cantidad</h4>
-                <label for="amount"></label>
-                <input type="number" name="amount" min="0" required>
-            </div>
-
-            <div id="url">
-                <h4>URL Imagen del Producto</h4>
-                <label for="url"></label>
-                <input type="url" name="url" required>
-            </div>
-
-            <div id="zone">
-                <h4>Ubicación Usuario</h4>
-                <label for="reg"></label>
-                <select name="region" id="reg">
-                    <option selected disabled>Selecciona la Region</option>
-                     <optgroup label="Uraba">
-                        <option value="sel">Necocli</option>
-                        <option value="sel">Arboletes</option>
-                        <option value="sel">San Pedro de Uraba</option>
-                        <option value="sel">Turbo</option>
-                        <option value="sel">Apartado</option>
-                        <option value="sel">Carepa</option>
-                        <option value="sel">Chigorodo</option>
-                        <option value="sel">Mutata</option>
-                        <option value="sel">Murindo</option>
-                        <option value="sel">Vigia del Fuerte</option>
-                    </optgroup>
-
-                    <optgroup label="Suroeste">
-                        <option value="sel">Urrao</option>
-                        <option value="sel">Betulia</option>
-                        <option value="sel">Salgar</option>
-                        <option value="sel">Concordia</option>
-                        <option value="sel">Amagá</option>
-                        <option value="sel">Andes</option>
-                        <option value="sel">Angelopolís</option>
-                        <option value="sel">Betania</option>
-                        <option value="sel">Caramanta</option>
-                        <option value="sel">Ciudad Bolívar</option>
-                        <option value="sel">Fredonia</option>
-                        <option value="sel">Híspania</option>
-                        <option value="sel">Jardín</option>
-                        <option value="sel">Jericó</option>
-                        <option value="sel">La Pintada</option>
-                        <option value="sel">Montebello</option>
-                        <option value="sel">Pueblorrico</option>
-                        <option value="sel">Santa Bárbara</option>
-                        <option value="sel">Támesis</option>
-                        <option value="sel">Tarso</option>
-                        <option value="sel">Titiribí</option>
-                        <option value="sel">Valparaiso</option>
-                        <option value="sel">Venecia</option>
-                    </optgroup>
-                    <optgroup label="Occidente">
-                        <option value="sel">Abriaquí</option>
-                        <option value="sel">Anzá</option>
-                        <option value="sel">Armenia</option>
-                        <option value="sel">Buritica</option>
-                        <option value="sel">Caicedo</option>
-                        <option value="sel">Cañasgordas</option>
-                        <option value="sel">Dabeiba</option>
-                        <option value="sel">Ebéjico</option>
-                        <option value="sel">Frontino</option>
-                        <option value="sel">Giraldo</option>
-                        <option value="sel">Heliconia</option>
-                        <option value="sel">Liborina</option>
-                        <option value="sel">Ólaya</option>
-                        <option value="sel">Peque</option>
-                        <option value="sel">Sabanalarga</option>
-                        <option value="sel">San Jéronimo</option>
-                        <option value="sel">Sopetran</option>
-                        <option value="sel">Santa fè de Antioquia</option>
-                        <option value="sel">Sopetran</option>
-                        <option value="sel">Uramita</option>
-                    </optgroup>
-                    <optgroup label="Norte">
-                        <option value="sel">Santa Rosa de Osos</option>
-                        <option value="sel">San Pedro de los Milagros</option>
-                        <option value="sel">San José de la Montaña</option>
-                        <option value="sel">Don Matías</option>
-                        <option value="sel">Entrerrìos</option>
-                        <option value="sel">Belmira</option>
-                        <option value="sel">Carolina del Principe</option>
-                        <option value="sel">Gómez Plata</option>
-                        <option value="sel">Yarumal</option>
-                        <option value="sel">Angostura</option>
-                        <option value="sel">Ítuango</option>
-                    </optgroup>
-                    <optgroup label="Bajo Cauca">
-                        <option value="sel">Nechí</option>
-                        <option value="sel">Caucasia</option>
-                        <option value="sel">El Bagre</option>
-                        <option value="sel">Caceres</option>
-                        <option value="sel">Zaragoza</option>
-                        <option value="sel">Tarazá</option>
-                        <option value="sel">Segovia</option>
-                        <option value="sel">Remedios</option>
-                        <option value="sel">Amalfi</option>
-                        <option value="sel">Anorí</option>
-                        <option value="sel">Briceño</option>
-                        <option value="sel">Valdivia</option>
-                    </optgroup>
-                    <optgroup label="Magdalena Medio">
-                        <option value="sel">Caracolí</option>
-                        <option value="sel">Maceo</option>
-                        <option value="sel">Puerto Berrio</option>
-                        <option value="sel">Puerto Nare</option>
-                        <option value="sel">Puerto Triunfo</option>
-                        <option value="sel">Yondó</option>
-                    </optgroup>
-                    <optgroup label="Oriente">
-                        <option value="sel">Rionegro</option>
-                        <option value="sel">La Ceja</option>
-                        <option value="sel">Guarne</option>
-                        <option value="sel">El Carmen de Viboral</option>
-                        <option value="sel">El Retiro</option>
-                        <option value="sel">Marinilla</option>
-                        <option value="sel">Abejorral</option>
-                        <option value="sel">Alejandria</option>
-                        <option value="sel">Argelia</option>
-                        <option value="sel">Cocorna</option>
-                        <option value="sel">Concepción</option>
-                        <option value="sel">El Peñol</option>
-                        <option value="sel">El Santuario</option>
-                        <option value="sel">Granada</option>
-                        <option value="sel">Guatapé</option>
-                        <option value="sel">La Únion</option>
-                        <option value="sel">Nariño</option>
-                        <option value="sel">San Carlos</option>
-                        <option value="sel">San Francisco</option>
-                        <option value="sel">San Luís</option>
-                        <option value="sel">San Ráfael</option>
-                        <option value="sel">San Vicente Ferrer</option>
-                    </optgroup>
-
-                </select>
-            </div>
-            <h4>Descripcion del Producto</h4>
-            <div>
-                <textarea name="description" id="description" maxlength="100" max-width="300px"
-                    max-height="350px"></textarea>
-            </div>
-
-
-            </textarea>
-
-            <button id="create" type="submit">Crear</button>
-
+        <form id="productForm">
+            <label for="productName">Nombre del Producto:</label><br>
+            <input type="text" id="productName" required><br><br>
+        
+            <label for="productPrice">Precio del Producto:</label><br>
+            <input type="text" id="productPrice" min="0" required><br><br>
+        
+            <label for="productQuantity">Cantidad del Producto:</label><br>
+            <input type="text" id="productQuantity" min="0" required><br><br>
+        
+            <label for="productImageURL">URL de la Imagen:</label><br>
+            <input type="text" id="productImageURL" required><br><br>
+        
+            <label for="productDescription">Descripción del Producto:</label><br>
+            <textarea id="productDescription" rows="4" required></textarea><br><br>
+        
+            <button type="submit">Agregar Producto</button>
         </form>
+
     </section>
 
     <section class="crud">
-        <table id="table">
+        <table id="productTable">
             <thead>
-                <h2>Listado de Productos</h2>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">(URL) Imagen de Producto</th>
-                    <th scope="col">Ubicacion Geografica</th>
-                    <th scope="col">Descripcion del Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Imagen</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Manzanas</td>
-                    <td>2.500 COP</td>
-                    <td>25</td>
-                    <td><img src="/public/img/apple.jpg" alt="Manzanas" width="35px" height="35px"></td>
-                    <td>Barbosa</td>
-                    <td>Manzanas rojas</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Peras</td>
-                    <td>3.000 COP</td>
-                    <td>15</td>
-                    <td><img src="/public/img/pear.jpg" alt="Peras" width="40px" height="30px"></td>
-                    <td>Sopetran</td>
-                    <td>Pras Verdes de tamaño medio</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Uvas</td>
-                    <td>2.800 COP</td>
-                    <td>38</td>
-                    <td><img src="/public/img/grapes.jpg" alt="Uvas" width="30px" height="40px"></td>
-                    <td>Olaya</td>
-                    <td>Uvas maduras</td>
-                </tr>
+            <tbody id="productList">
+        
             </tbody>
-
         </table>
-        <div id="button-table">
-            <button>Eliminar</button>
-            <button>Editar</button>
-        </div>
 
 
     </section>
@@ -335,7 +154,7 @@
 
 
     
-
+    <script type="module" src="../js/user.js"></script>
 </body>
 
 </html>
