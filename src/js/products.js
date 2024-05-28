@@ -1,5 +1,7 @@
 const URL_API = `http://localhost:3000/agriculturalProducts`
+const URL_API_FAVORITES = `http://localhost:3000/favorite`
 const sectionProducts = document.querySelector(".section-products")
+const btnDetails = document.querySelector("#button-card-product")
 
 index(sectionProducts);
 
@@ -42,8 +44,43 @@ async function index(sectionProducts) {
             document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
             document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
             document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
+
+            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerAgricola.ownerEmail}`;
+            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerAgricola.ownerPhoneNumber}`;
+            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerAgricola.ownerNumberWhatsapp}`;
+
+
             const myModal = new bootstrap.Modal(document.getElementById('product-modal'));
             myModal.show();
+
+            document.getElementById('button-card-product').onclick = function() {
+                addToFavorites(product);
+            };
         });
     });
+}
+
+
+export async function addToFavorites(product) {
+    const response = await fetch(URL_API_FAVORITES)
+    const favorite = await response.json()
+    
+    let productExist = false
+
+    for (let i = 0; i < favorite.length; i++) {
+        if (favorite[i].id === product.id) {
+            productExist = true
+            alert(`el producto ${favorite[i].productName} ya existe en favoritos`)
+            break
+        }
+    }
+    if (!productExist) { 
+        await fetch(URL_API_FAVORITES, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(product)
+        });
+    }
 }

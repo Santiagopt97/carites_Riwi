@@ -55,6 +55,10 @@
   transition: 0.4s;
 }
 
+#link-ingreso{
+  text-decoration: none;
+  color: var(--beige);
+}
 
 .modal-content {
   width: 80%;
@@ -146,8 +150,13 @@ p a:hover {
 }
 
 #btn-init-sesion {
+  cursor: pointer;
   border-radius: 15px;
   border: 2px solid var(--beige);
+}
+
+.text-init-login{
+  cursor: pointer;
 }
 
 .position-a {

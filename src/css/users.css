@@ -11,7 +11,6 @@
   --brown-yellow: #D68B30;
   --cream: #F5E6C5;
   --olive-green: #3F422F;
-
 }
 
 *{
@@ -64,7 +63,7 @@ p{
 
 .nav-pages a{
     text-decoration: none;
-    color: var(--dark-green);
+    color: var(--olive-green);
     padding-right: 8px;
 }
 
@@ -87,7 +86,7 @@ p{
 
 
 .hero {
-   min-height: 60vh;
+   min-height: 90vh;
    position: relative;
    border-radius: 0 0 350px 0;
    background-color: var(--dark-green);
@@ -113,7 +112,7 @@ video {
 .welcome {
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 8%;
     color: var(--cream);
     
 }
@@ -147,7 +146,7 @@ video {
 }
 
 .crud h2{
-    color: var(--dark-green);
+    color: var(--olive-green);
     margin-left: 30%;
     margin-bottom: 5%;
 }
@@ -169,7 +168,7 @@ video {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    background-color: var(--dark-green);
+    background-color: var(--olive-green);
     border-radius:350px 0px 0  0;
 }
 
@@ -177,7 +176,7 @@ video {
 
 #btn-1{
 
-   color: var(--dark-green);
+   color: var(--olive-green);
    padding-top: 14px;
    width: 200px;
    font-size: 28px;
@@ -187,7 +186,7 @@ video {
 
 #btn-2 {
    
-    color: var(--dark-green);
+    color: var(--olive-green);
     padding-top: 14px;
     width: 200px;
     font-size: 28px;
@@ -196,7 +195,7 @@ video {
 }
 
 #btn-3 {
-   color: var(--dark-green);
+   color: var(--olive-green);
    padding-top: 14px;
    width: 200px;
    font-size: 28px;
@@ -205,7 +204,7 @@ video {
 }
 
 #btn-4 {
-    color: var(--dark-green);
+    color: var(--olive-green);
     padding-top: 14px;
     width: 200px;
     font-size: 28px;
@@ -281,22 +280,26 @@ video {
     font-size: 22px;
     border-radius: 15px;
     background-color: var(--cream);
-    color: var(--dark-green);
+    color: var(--olive-green);
 }
 
 #parragraf {
 
-    width: 480px;
-    font-weight: 400;
+    width: 580px;
+    font-weight: 300;
     text-align: center;
     align-items: center;
     margin-left: 80px;
     color: var(--cream);
 }
 
+#parragraf-2{
+    color: var(--cream);
+}
+
 #title-manual {
     position: absolute;
-    top: 105%;
+    top: 145%;
     color: var(--cream);
 }
 
@@ -372,7 +375,7 @@ video {
     height: 70px;
     align-items: center;
     text-align: center;
-    background-color: var(--dark-green);
+    background-color: var(--olive-green);
 }
 
 #button-table button{
