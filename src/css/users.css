@@ -230,9 +230,9 @@ video {
 }
 
 
-#form-create {
-    
-   
+#productForm {
+
+
     align-items: center;
     text-align: center;
     width: 600px;
@@ -240,18 +240,18 @@ video {
     margin: 50px 360px;
     margin-left: 560px;
     border-radius: 35px;
-    
-    
+
+
 }
 
-#form-create div{
+#productForm div {
     align-items: center;
     margin-top: 5px;
     padding-top: 10px;
-    
+
 }
 
-#form-create input{
+#productForm input {
     width: 380px;
     height: 29px;
     padding-top: 5px;
@@ -260,7 +260,7 @@ video {
 
 }
 
-#form-create h4{
+#productForm h4 {
     margin-top: 8px;
     padding-top: 10px;
     color: var(--cream);
