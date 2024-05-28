@@ -42,6 +42,12 @@ async function index(sectionProducts) {
             document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
             document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
             document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
+
+            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerAgricola.ownerEmail}`;
+            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerAgricola.ownerPhoneNumber}`;
+            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerAgricola.ownerNumberWhatsapp}`;
+
+
             const myModal = new bootstrap.Modal(document.getElementById('product-modal'));
             myModal.show();
         });
