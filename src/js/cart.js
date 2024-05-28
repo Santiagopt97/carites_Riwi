@@ -1,4 +1,4 @@
-const URL = "http://localhost:3000/agriculturalProducts"
+const URL = "http://localhost:3000/favorite"
 const section = document.querySelector("#section")
 
 async function index() {
@@ -51,4 +51,13 @@ async function index() {
 }
 
 index()
+
+window.addEventListener('load', async function clearFavorites(){
+    await fetch(URL_API_FAVORITES, {
+        method: 'DELETE',
+    })
+});
+
+
+
 
