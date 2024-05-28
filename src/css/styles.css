@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* variables */
+
 :root {
   --beige: #F5E6C5;
   --verde: #3F422F;
@@ -9,8 +11,10 @@
 * {
   scroll-behavior: smooth;
 }
-  
-#navbar{
+
+/* Header */
+
+#navbar {
   font-size: 19px;
   background-color: transparent;
   backdrop-filter: blur(1px);
@@ -23,15 +27,6 @@
 
 #navbar.scrolled {
   background-color: var(--beige);
-}
-.register{
-  position: relative;
-  left: 25vw;
-}
-.login{
-
-  position: relative;
-  left: 37vw;
 }
 
 .register {
@@ -59,6 +54,131 @@
   transition: 0.4s;
 }
 
+#link-ingreso {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.modal-content {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  box-decoration-break: slice;
+}
+
+.form-control {
+  background-color: var(--beige);
+  padding-left: 10px;
+  border: 2px solid var(--naranja);
+  border-radius: 15px;
+}
+
+.form-control:hover {
+  color: var(--naranja);
+}
+
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: var(--naranja);
+  color: var(--beige);
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+
+.myform #btn-init-sesion:hover {
+  background-color: var(--beige);
+  color: var(--verde);
+  border-radius: 15px;
+  border: var(--naranja) 2px solid;
+  font-size: 1.2em;
+  font-weight: bold
+}
+
+p {
+  text-align: center;
+  padding-top: 2em;
+  color: var(--beige);
+}
+
+p a {
+  color: var(--naranja) !important;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--naranja);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.link-terms-register {
+  color: var(--naranja) !important;
+  text-decoration: none;
+}
+
+#name-lastname {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.name-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#bg-fooondo-form {
+  background: var(--verde);
+  color: var(--beige);
+  border-radius: 15px;
+}
+
+#reg {
+  background: var(--beige);
+  color: var(--verde);
+  border-radius: 14px;
+  border: var(--naranja) 2px solid;
+  padding: 0.5em 0;
+}
+
+.input-email-login,
+.input-password-login {
+  background: var(--beige);
+  color: var(--verde);
+
+}
+
+#btn-init-sesion {
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid var(--beige);
+}
+
+.text-init-login {
+  cursor: pointer;
+}
+
 .position-a {
   position: absolute;
   right: 5vw;
@@ -71,6 +191,8 @@
   background-color: var(--naranja);
 }
 
+/* section banner */
+
 #banner {
   background-image: url("../../public/img/Detalles-06.png");
   background-position: center;
@@ -81,7 +203,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
 }
 
@@ -98,7 +219,7 @@
   height: auto;
 }
 
-#container-text-banner{
+#container-text-banner {
   color: var(--beige);
   text-align: center;
   width: 100%;
@@ -114,14 +235,19 @@
   font-weight: 600;
 }
 
+/* section about us */
+
 .about-us {
   padding: 3rem 0;
   background-color: var(--beige);
   text-align: center;
+}
+
+.about-us p {
   color: var(--verde);
 }
 
-.about-us h2{
+.about-us h2 {
   color: var(--naranja);
   font-size: 4rem;
   line-height: 1.8;
@@ -143,7 +269,9 @@
   height: 80vh;
 }
 
-#stats{
+/* section stats */
+
+#stats {
   background-color: var(--verde);
   padding: 4rem 8rem;
   gap: 5rem;
@@ -152,7 +280,7 @@
   align-items: center;
 }
 
-#stats-text{
+#stats-text {
   color: var(--beige);
   width: 48%;
 }
@@ -167,9 +295,11 @@
   height: 100%;
 }
 
+/* section cards */
+
 .hero-section {
   padding: 2rem 0;
-  background-color:var(--beige) ;
+  background-color: var(--beige);
 }
 
 .hero-section_title {
@@ -180,7 +310,6 @@
   color: #D68B30;
   font-weight: 400;
 }
-
 
 .hero-section_cards {
   padding: 5rem 0;
@@ -198,7 +327,7 @@
   padding: 1.6rem;
   height: 100%;
   opacity: 0;
-  background: RGBA(0,0,0,0.8);
+  background: RGBA(0, 0, 0, 0.8);
   color: var(--beige);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -230,7 +359,6 @@
   font-weight: 300;
 }
 
-
 .card-1 {
   background: url('https://images.pexels.com/photos/16957839/pexels-photo-16957839/free-photo-of-paisaje-hombre-granjero-retrato.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-position: center;
@@ -260,13 +388,15 @@
   background-position: center;
 }
 
+/* section contact us */
+
 .labels {
   display: flex;
   flex-direction: column;
 }
 
-.contact{
-  background-image: url(../../public/img/Detalles-17.png) ;
+.contact {
+  background-image: url(../../public/img/Detalles-17.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,14 +408,16 @@
   justify-content: center;
 }
 
-.contact h2{
+.contact h2 {
   font-size: 40px;
   padding: 42px 0 10px 0;
 }
-.contenedor-contacto{
+
+.contenedor-contacto {
   width: 50vw;
 }
-.form{
+
+.form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -296,7 +428,8 @@
   font-weight: 500;
 }
 
-.form input, .form textarea{
+.form input,
+.form textarea {
   padding: 7px;
   margin: 10px 0;
   font-size: 18px;
@@ -304,7 +437,7 @@
   background-color: var(--beige);
 }
 
-.form button{
+.form button {
   align-self: center;
   border-radius: 12px;
   color: var(--naranja);
@@ -316,10 +449,12 @@
   width: 100px;
 }
 
-.form button:hover{
+.form button:hover {
   background-color: var(--naranja);
   color: var(--beige);
 }
+
+/* Footer */
 
 #footer {
   background-color: var(--beige);
@@ -338,9 +473,16 @@
   font-size: 38px;
 }
 
+/* responsive */
+
+@media (max-width: 576px) {
+  .myform {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 
 @media(max-width: 990px) {
-
 
   .position-a {
     width: 100%;
@@ -349,29 +491,35 @@
     gap: 30px;
     right: 0vw;
   }
-  #stats{
+
+  #stats {
     display: flex;
     flex-direction: column-reverse;
   }
+
   #stats-text {
     width: 100%;
   }
+
   #iframe {
     width: 100%;
     height: 20rem;
   }
 }
-@media(max-width: 600px){
-  #container-text-banner h1{
+
+@media(max-width: 600px) {
+  #container-text-banner h1 {
     font-size: 50px;
   }
-  #stats{
+
+  #stats {
     padding: 10%;
     font-size: 18px;
   }
 }
-@media(max-width: 420px){
-  #container-text-banner h1{
+
+@media(max-width: 420px) {
+  #container-text-banner h1 {
     font-size: 40px;
   }
 }
