@@ -193,7 +193,7 @@ p a:hover {
   background-color: var(--naranja);
 }
 
-/* section banner */
+
 
 /* section banner */
 
@@ -223,7 +223,7 @@ p a:hover {
   height: auto;
 }
 
-#container-text-banner {
+
 #container-text-banner {
   color: var(--beige);
   text-align: center;
@@ -240,7 +240,6 @@ p a:hover {
   font-weight: 600;
 }
 
-/* section about us */
 
 /* section about us */
 
@@ -254,7 +253,6 @@ p a:hover {
   color: var(--verde);
 }
 
-.about-us h2 {
 .about-us h2 {
   color: var(--naranja);
   font-size: 4rem;
@@ -277,9 +275,9 @@ p a:hover {
   height: 80vh;
 }
 
-/* section stats */
 
-#stats {
+
+
 /* section stats */
 
 #stats {
@@ -291,7 +289,7 @@ p a:hover {
   align-items: center;
 }
 
-#stats-text {
+
 #stats-text {
   color: var(--beige);
   width: 48%;
@@ -413,8 +411,7 @@ p a:hover {
   flex-direction: column;
 }
 
-.contact {
-  background-image: url(../../public/img/Detalles-17.png);
+
 .contact {
   background-image: url(../../public/img/Detalles-17.png);
   background-position: center;
@@ -428,19 +425,17 @@ p a:hover {
   justify-content: center;
 }
 
-.contact h2 {
+
 .contact h2 {
   font-size: 40px;
   padding: 42px 0 10px 0;
 }
 
-.contenedor-contacto {
+
 
 .contenedor-contacto {
   width: 50vw;
 }
-
-.form {
 
 .form {
   width: 100%;
@@ -455,8 +450,6 @@ p a:hover {
 
 .form input,
 .form textarea {
-.form input,
-.form textarea {
   padding: 7px;
   margin: 10px 0;
   font-size: 18px;
@@ -464,7 +457,7 @@ p a:hover {
   background-color: var(--beige);
 }
 
-.form button {
+
 .form button {
   align-self: center;
   border-radius: 12px;
@@ -478,14 +471,12 @@ p a:hover {
 }
 
 .form button:hover {
-.form button:hover {
   background-color: var(--naranja);
   color: var(--beige);
 }
 
 /* Footer */
 
-/* Footer */
 
 #footer {
   background-color: var(--beige);
@@ -531,7 +522,6 @@ p a:hover {
     right: 0vw;
   }
 
-  #stats {
 
   #stats {
     display: flex;
@@ -552,22 +542,14 @@ p a:hover {
 
 @media(max-width: 600px) {
   #container-text-banner h1 {
-
-@media(max-width: 600px) {
-  #container-text-banner h1 {
     font-size: 50px;
   }
-
-  #stats {
 
   #stats {
     padding: 10%;
     font-size: 18px;
   }
 }
-
-@media(max-width: 420px) {
-  #container-text-banner h1 {
 
 @media(max-width: 420px) {
   #container-text-banner h1 {
