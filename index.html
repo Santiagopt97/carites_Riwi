@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +10,8 @@
 </head>
 
 <body>
+    <!------------ start section header -->
+
     <!------------ start section header -->
 
     <header id="header">
@@ -30,12 +31,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="./src/pages/products.html">Productos</a>
+                            <a class="nav-link fw-bold" href="./src/pages/products.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="#contact">Contactanos</a>
                         </li>
                     </ul>
                     <div class="position-a">
+                        <button type="button" class="login " data-bs-toggle="modal"
+                            data-bs-target="#modal-form">Ingresa</button>
+                        <button type="button" class="register " data-bs-toggle="modal"
+                            data-bs-target="#modal-form-register">Registrate</button>
                         <button type="button" class="login " data-bs-toggle="modal"
                             data-bs-target="#modal-form">Ingresa</button>
                         <button type="button" class="register " data-bs-toggle="modal"
@@ -342,6 +348,116 @@
             </div>
         </section>
         <!------------------- section cards -->
+        </section>
+        <!------------ about us -->
+
+        <section class="container-fluid d-flex about-us " id="about-us">
+            <div class="container about-us">
+                <h2><b>¿Quienes somos?</b></h2>
+                <p>Somos una aplicación que conecta a agricultores y
+                    campesinos con los mercados locales para vender su
+                    excedente de producción, alimentos no tan estéticos o
+                    productos próximos a caducar. De esa manera evitamos
+                    un desperdicio considerable y promovemos una cultura
+                    agropecuaria sostenible
+                </p>
+            </div>
+        </section>
+        <div class="container-fluid" id="garden">
+        </div>
+        <!--------------- section about stats -->
+
+        <section class="container-fluid " id="stats">
+            <div id="iframe">
+                <iframe src="https://www.youtube.com/embed/K1TzV8GoN88?si=WKVpFOcSQk1TiS4K" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <div id="stats-text">
+                <h2>Un problema de desperdicio</h2>
+                <p>En Colombia, 9,7 toneladas de alimentos se pierden cada año debido a que no cumplen con los
+                    estándares
+                    estéticos del mercado o sufren deterioro antes de ser comercializados.El 40 % de los alimentos que
+                    se
+                    pierden están en la producción agropecuaria, esto equivale a 3,8 millones de toneladas por la falta
+                    de
+                    planes de abastecimiento que pongan en "una balanza la oferta y la demanda".
+                </p>
+                <p> Esta situación no solo genera un desperdicio considerable de alimentos aptos para el consumo, sino
+                    que
+                    también implica un desaprovechamiento de los recursos utilizados en su producción, como tierra,
+                    agua,
+                    energía e insumos agrícolas. Además, la pérdida de estos productos genera sobrecostos para los
+                    agricultores, quienes ven reducidos sus ingresos al no poder vender toda su cosecha.</p>
+            </div>
+        </section>
+        <!------------------- section cards -->
+
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-section_title">Conoce los beneficios de <br><b>unirte a nuestra familia</b></h1>
+                <div class="hero-section_cards">
+                    <div class="hero-section_card card-1">
+                        <div class="hero-section_card_content">
+                            <h2>Comercializacion</h2>
+                            <p>Brindamos un canal de comercializacion adecuado para la venta del excedente de produccion
+                                de nuestros campesinos.</p>
+                        </div>
+                    </div>
+                    <div class="hero-section_card card-2">
+                        <div class="hero-section_card_content">
+                            <h2>Reduccion de desperdicio</h2>
+                            <p>Evitamos el desperdicio de alimentos y la perdida de ingresos de los agricultores
+                                aliados.</p>
+                        </div>
+                    </div>
+                    <div class="hero-section_card card-3">
+                        <div class="hero-section_card_content">
+                            <h2>Sostenibilidad</h2>
+                            <p>Cuidamos el planeta gracias al aprovechamiento de los recursos naturales y disminuimos
+                                las emiciones de CO2 y otros residuos derivados.</p>
+                        </div>
+                    </div>
+                    <div class="hero-section_card card-4">
+                        <div class="hero-section_card_content">
+                            <h2>Conexion</h2>
+                            <p>Conectamos a mercados locales y empresas con nuestros campesinos para el aprovechamiento
+                                de estos productos como materia prima.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------- contact us -->
+
+        <section class="contact" id="contact">
+            <h2>Contáctanos</h2>
+            <article class="contenedor-contacto">
+                <form action="" class="form">
+                    <div class="labels">
+                        <label for="full-name">Nombre completo</label>
+                        <input type="text" name="full-name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="labels">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="labels">
+                        <label for="about">Asunto</label>
+                        <input type="text" name="about" placeholder="Asunto">
+                    </div>
+                    <div class="labels">
+                        <label for="comments">Mensaje</label>
+                        <textarea name="comments" id="comments" cols="20" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+        </section>
+
+    </main>
+    <!---------------------- footer -->
 
         <section class="hero-section">
             <div class="container">
@@ -411,6 +527,7 @@
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <img src="/public/img/Logo_Mesa de trabajo 1.png" alt="" class="img-footer">
+
 
             </a>
             <span class="mb-3 mb-md-0 ">© 2024 Riwi Company</span>

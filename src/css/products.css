@@ -1,0 +1,333 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titles {
+  font-family: "Montserrat"
+}
+
+.paragraph {
+  font-family: "Open Sans"
+}
+
+:root {
+
+  --dark-green: #134B42;
+  --opaque-green: #80917D;
+  --green-luminoso-claro: #AEBA8A;
+  --mustard-yellow: #EEA83B;
+  --opaque-orange: #CA763B;
+  --brown-yellow: #D68B30;
+  --cream: #F5E6C5;
+  --olive-green: #3F422F;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat"
+}
+
+body {
+  background: var(--cream);
+}
+
+#navbar {
+  font-size: 19px;
+  background-color: var(--cream);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-a {
+  position: absolute;
+  right: 5vw;
+}
+#fav-cart{
+  color: var(--brown-yellow);
+}
+
+@media(max-width: 990px) {
+
+  #navbarNav {
+    height: 170px;
+  }
+
+  #burguer {
+    position: relative;
+    left: 27%;
+  }
+
+  .position-a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    right: 0vw;
+  }
+}
+
+.section-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 100px;
+  font-size: larger;
+  text-align: center;
+}
+
+main .section-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 50vh;
+}
+
+.card-product {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card-product .face-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card-product .front-card {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px var(--olive-green);
+  text-transform: capitalize;
+}
+
+.card-product .front-card .img-card-product {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-product .front-card .h3-card-product {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: var(--cream)!important;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+
+.face-card .back-card {
+  height: 100%;
+}
+
+.back-card #info-back-product {
+  max-height: 100%;
+
+}
+
+.card-product .back-card {
+  transform: perspective(600px) rotateY(180deg);
+  background: var(--olive-green);
+  padding: 15px;
+  color: var(--green-luminoso-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px var(--olive-green);
+  text-transform: capitalize;
+}
+
+.card-product .back-card .price-info {
+  border-top: solid 3px var(--cream);
+  height: 40%;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-product .back-card .price-info .h3-card-product {
+  color: var(--brown-yellow);
+  margin-top: 15px;
+}
+
+.card-product .back-card .price-info .button-card-product .a-card-car {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.card-product .back-card .price-info .button-card-product {
+  border-radius: 10px;
+  background-color: var(--brown-yellow);
+  padding: 5px 10px;
+  margin: 2px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+#button-card-product {
+  border-radius: 10px;
+  background-color: var(--brown-yellow);
+  color: var(--olive-green);
+  padding: 5px 10px;
+  border: 2px solid var(--olive-green);
+}
+#button-card-product:hover {
+  border-radius: 10px;
+  background-color: var(--olive-green);
+  color: var(--brown-yellow);
+  padding: 5px 10px;
+  border: 2px solid var(--brown-yellow);
+}
+
+
+.card-product .back-card .h3-card-product {
+  font-size: 25px;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+
+.card-product .back-card .p-card-product {
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+#h3-card-product, .p-card-product{
+  color: var(--cream);
+}
+.card-product:hover .front-card {
+  transform: perspective(600px) rotateY(180deg);
+
+}
+
+.card-product:hover .back-card {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/* Styles al modal */
+
+#product-modal .modal-content {
+  background-color: var(--cream);
+  color: var(--olive-green);
+}
+
+.modal-dialog {
+  width: 450px;
+
+}
+/* styles modal header */
+.modal-header {
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+}
+
+.modal-title {
+  padding-top: 15px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+/* styles modal body */
+
+#modal-product-name {
+  text-transform: capitalize;
+  font-size: 40px;
+
+}
+
+#modal-info-content-all {
+  width: 100%;
+}
+
+#modal-info-content-all #content-image-modal {
+  min-width: 50%;
+
+}
+
+#modal-info-content-all .modal-detail-productl {
+  max-width: 50%;
+}
+#modal-product-price{
+  color: var(--brown-yellow);
+}
+
+#content-image-modal {
+  height: 200px;
+  width: 250px;
+}
+
+#content-image-modal img {
+  margin-top: 25px;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px var(--olive-green);
+
+}
+/* styles footer modal */
+
+#footer-info-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer-info-modal #ul-description-owner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+.color-icon-detail{
+  color: var(--brown-yellow);
+}
+#wpp-detail-modal{
+  border-radius: 50px;
+}
+#ul-contact-owner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  align-items: center;
+  gap: 20px;
+}
+/* styles footer */
+
+#footer {
+  background-color: var(--beige);
+  color: var(--bg-green);
+  font-size: 18px;
+}
+
+.img-footer {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.bi {
+  font-size: 38px;
+}
