@@ -99,17 +99,17 @@ async function index() {
     tbody.innerHTML = ''
     userProducts.forEach(product => {
         tbody.innerHTML += `
-        <td>${product.productName}</td>
-        <td>${product.productPrice}</td>
-        <td>${product.productQuantity}</td>
-        <td><img width="100px" src=${product.linkProductImage} alt=${product.productName}></td>
-        <td>${product.productDescription}</td>
-        <td>
-        <button type="button" data-id=${product.id} class="btn btn-danger ms-3">Delete</button>
-        </td>
-        <td>
-        <button type="button" data-id=${product.id} class="btn btn-warning ms-3">Edit</button>
-        </td>
+        <tr>
+            <td scope="row">${product.productName}</td>
+            <td>${product.productPrice}</td>
+            <td>${product.productQuantity}</td>
+            <td><img width="100px" src=${product.linkProductImage} alt=${product.productName}></td>
+            <td>${product.productDescription}</td>
+            <td>
+                <button type="button" data-id=${product.id} class="btn btn-danger ms-3">Delete</button>
+            <button type="button" data-id=${product.id} class="btn btn-warning ms-3">Edit</button>
+            </td>
+        </tr>
         `
     })
 }

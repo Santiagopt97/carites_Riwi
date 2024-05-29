@@ -106,20 +106,20 @@
     <section class="access">
 
         <form id="productForm">
-            <label for="productName">Nombre del Producto:</label><br>
-            <input type="text" id="productName" required><br><br>
+            <label for="productName">Nombre del Producto:</label>
+            <input type="text" id="productName" required>
 
-            <label for="productPrice">Precio del Producto:</label><br>
-            <input type="number" id="productPrice" min="0" required><br><br>
+            <label for="productPrice">Precio del Producto:</label>
+            <input type="number" id="productPrice" min="0" required>
 
-            <label for="productQuantity">Cantidad del Producto:</label><br>
-            <input type="number" id="productQuantity" min="0" required><br><br>
+            <label for="productQuantity">Cantidad del Producto:</label>
+            <input type="number" id="productQuantity" min="0" required>
 
-            <label for="productImageURL">URL de la Imagen:</label><br>
-            <input type="url" id="productImageURL" required><br><br>
+            <label for="productImageURL">URL de la Imagen:</label>
+            <input type="url" id="productImageURL" required>
 
-            <label for="productDescription">Descripción del Producto:</label><br>
-            <textarea id="productDescription" rows="4" required></textarea><br><br>
+            <label for="productDescription">Descripción del Producto:</label>
+            <textarea id="productDescription" rows="4" required></textarea>
 
             <button id="send-product" type="submit">Agregar Producto</button>
         </form>
@@ -127,22 +127,21 @@
     </section>
 
     <section class="crud">
-        <table id="productTable">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Imagen</th>
+            <table class="table table-secondary">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Imagen</th>
                     <th>Descripción</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="productList">
+                    <th colspan="2">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="productList">
 
-            </tbody>
+                </tbody>
         </table>
-
 
     </section>
 
