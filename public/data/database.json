@@ -52,6 +52,23 @@
       }
     },
     {
+      "id": "pqr678",
+      "productName": "manzana",
+      "productDescription": "Manzana roja deliciosa y crujiente",
+      "productQuantity": "12",
+      "productPrice": "15000",
+      "linkProductImage": "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "ownerAgricola": {
+        "ownerName": "pedro",
+        "ownerLastName": "ramirez",
+        "ownerDocument": "101010260",
+        "ownerTown": "guarne",
+        "ownerPhoneNumber": "3209876543",
+        "ownerEmail": "pedro.ramirez@gmail.com",
+        "ownerNumberWhatsapp": "573209876543"
+      }
+    },
+    {
       "id": "jkl012",
       "productName": "papa",
       "productDescription": "Papa criolla de alta calidad",
@@ -83,23 +100,6 @@
         "ownerPhoneNumber": "3123456789",
         "ownerEmail": "luis.rodriguez@gmail.com",
         "ownerNumberWhatsapp": "573123456789"
-      }
-    },
-    {
-      "id": "pqr678",
-      "productName": "manzana",
-      "productDescription": "Manzana roja deliciosa y crujiente",
-      "productQuantity": "12",
-      "productPrice": "15000",
-      "linkProductImage": "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "ownerAgricola": {
-        "ownerName": "pedro",
-        "ownerLastName": "ramirez",
-        "ownerDocument": "101010260",
-        "ownerTown": "guarne",
-        "ownerPhoneNumber": "3209876543",
-        "ownerEmail": "pedro.ramirez@gmail.com",
-        "ownerNumberWhatsapp": "573209876543"
       }
     },
     {
@@ -194,5 +194,4 @@
       "ownerEmail": "",
       "ownerPassword": ""
     }
-  ]
-}
+]
