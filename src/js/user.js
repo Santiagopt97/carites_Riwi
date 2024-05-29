@@ -27,10 +27,10 @@ form.addEventListener('submit', async (event) => {
     event.preventDefault()
     if (!id) {
         await create(productName.value, productPrice.value, productQuantity.value, linkProductImage.value, productDescription.value)
-    } else {
+    }/*  else {
         await updateProduct(id, productName.value, productPrice.value, productQuantity.value, linkProductImage.value, productDescription.value)
         id = undefined
-    }
+    } */
     await index()
     form.reset()
 })
@@ -41,7 +41,7 @@ tbody.addEventListener('click', async (event) => {
         const id = event.target.getAttribute('data-id')
         await deleteProduct(id)
         await index()
-    } else if (event.target.classList.contains('btn-warning')) {
+    } /* else if (event.target.classList.contains('btn-warning')) {
         id = event.target.getAttribute('data-id')
         const productFound = await find(id)
         productName.value = productFound.productName
@@ -49,15 +49,15 @@ tbody.addEventListener('click', async (event) => {
         productQuantity.value = productFound.productQuantity
         linkProductImage.value = productFound.linkProductImage
         productDescription.value = productFound.productDescription
-    }
+    } */
 })
 
 // function search for a product by id in the api
-async function find(id) {
+/* async function find(id) {
     const response = await fetch(URL_PRODUCT + id)
     const data = await response.json()
     return data
-}
+} */
 
 // function create product in product table and save it with the corresponding user credentials
 async function create(productName, productPrice, productQuantity, linkProductImage, productDescription) {
@@ -107,15 +107,16 @@ async function index() {
             <td>${product.productDescription}</td>
             <td>
                 <button type="button" data-id=${product.id} class="btn btn-danger ms-3">Delete</button>
-            <button type="button" data-id=${product.id} class="btn btn-warning ms-3">Edit</button>
+            
             </td>
         </tr>
         `
     })
 }
 
-// function update existing product by id in product table
-async function updateProduct(id, productName, productPrice, productQuantity, linkProductImage, productDescription) {
+// function update existing product by id in product table ---> no nos quiere funcionar y rompe el codigo
+
+/* async function updateProduct(id, productName, productPrice, productQuantity, linkProductImage, productDescription) {
     await fetch(URL_PRODUCT + id, {
         method: 'PUT',
         body: JSON.stringify({ productName, productPrice, productQuantity, linkProductImage, productDescription }),
@@ -123,7 +124,7 @@ async function updateProduct(id, productName, productPrice, productQuantity, lin
             'Content-Type': 'application/json'
         }
     })
-}
+} */
 
 // function delete existing product by id in product table
 async function deleteProduct(id) {

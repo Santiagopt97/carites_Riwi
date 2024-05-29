@@ -171,12 +171,12 @@
       }
     },
     {
-      "id": "5945",
+      "id": "35d2",
       "productName": "manzana",
       "productPrice": "2500",
       "productQuantity": "5",
       "linkProductImage": "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "productDescription": "manzanas ricas",
+      "productDescription": "a",
       "ownerAgricola": {
         "ownerName": "p",
         "ownerLastName": "p",
@@ -188,25 +188,7 @@
       }
     }
   ],
-  "favorite": [
-    {
-      "id": "def456",
-      "productName": "tomate",
-      "productDescription": "Tomate cherry orgánico, fresco y jugoso",
-      "productQuantity": "10",
-      "productPrice": "8000",
-      "linkProductImage": "https://img.freepik.com/foto-gratis/vista-superior-tomates-amarillos-rojos-mesa-madera_141793-9768.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715731200&semt=ais_user",
-      "ownerAgricola": {
-        "ownerName": "maría",
-        "ownerLastName": "lópez",
-        "ownerDocument": "101010256",
-        "ownerTown": "támesis",
-        "ownerPhoneNumber": "3145678920",
-        "ownerEmail": "maria.lopez@gmail.com",
-        "ownerNumberWhatsapp": "573145678920"
-      }
-    }
-  ],
+  "favorite": [],
   "user": [
     {
       "id": "abc123",
