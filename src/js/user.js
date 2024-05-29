@@ -27,10 +27,10 @@ form.addEventListener('submit', async (event) => {
     event.preventDefault()
     if (!id) {
         await create(productName.value, productPrice.value, productQuantity.value, linkProductImage.value, productDescription.value)
-    }/*  else {
+    }else {
         await updateProduct(id, productName.value, productPrice.value, productQuantity.value, linkProductImage.value, productDescription.value)
         id = undefined
-    } */
+    } 
     await index()
     form.reset()
 })
@@ -39,9 +39,12 @@ form.addEventListener('submit', async (event) => {
 tbody.addEventListener('click', async (event) => {
     if (event.target.classList.contains('btn-danger')) {
         const id = event.target.getAttribute('data-id')
-        await deleteProduct(id)
-        await index()
-    } /* else if (event.target.classList.contains('btn-warning')) {
+        const isConfirmed = confirm("¿Estás seguro de que quieres eliminar este producto?");
+        if (isConfirmed) {
+            await deleteProduct(id);
+            await index();
+        }
+    } else if (event.target.classList.contains('btn-warning')) {
         id = event.target.getAttribute('data-id')
         const productFound = await find(id)
         productName.value = productFound.productName
@@ -49,15 +52,15 @@ tbody.addEventListener('click', async (event) => {
         productQuantity.value = productFound.productQuantity
         linkProductImage.value = productFound.linkProductImage
         productDescription.value = productFound.productDescription
-    } */
+    }
 })
 
 // function search for a product by id in the api
-/* async function find(id) {
+async function find(id) {
     const response = await fetch(URL_PRODUCT + id)
     const data = await response.json()
     return data
-} */
+}
 
 // function create product in product table and save it with the corresponding user credentials
 async function create(productName, productPrice, productQuantity, linkProductImage, productDescription) {
@@ -84,48 +87,68 @@ async function create(productName, productPrice, productQuantity, linkProductIma
 
 // function list products in table by farmer
 async function index() {
-    const user = JSON.parse(localStorage.getItem('userOnline'));
+    const user1 = JSON.parse(localStorage.getItem('userOnline'));
 
-    if (!user) {
-        alert("Debes iniciar sesión para ver tus productos.")
-        return
+    if (!user1) {
+        alert("Debes iniciar sesión para ver tus productos.");
+        return;
     }
 
-    const response = await fetch(URL_PRODUCT)
-    const data = await response.json()
 
-    const userProducts = data.filter(product => product.ownerAgricola.ownerEmail === user.ownerEmail)
+    const response = await fetch(URL_PRODUCT);
+    const data = await response.json();
 
-    tbody.innerHTML = ''
+    // Filtrar los productos que pertenecen al usuario loggeado
+    const userProducts = data.filter(product =>
+        product.ownerAgricola && product.ownerAgricola.ownerEmail === user1.ownerEmail
+    );
+
+    // Limpiar el contenido del tbody
+    tbody.innerHTML = '';
+
+    // Agregar los productos del usuario al tbody
     userProducts.forEach(product => {
         tbody.innerHTML += `
-        <tr>
-            <td scope="row">${product.productName}</td>
-            <td>${product.productPrice}</td>
-            <td>${product.productQuantity}</td>
-            <td><img width="100px" src=${product.linkProductImage} alt=${product.productName}></td>
-            <td>${product.productDescription}</td>
-            <td>
-                <button type="button" data-id=${product.id} class="btn btn-danger ms-3">Delete</button>
-            
-            </td>
-        </tr>
-        `
-    })
+            <tr>
+                <td>${product.productName}</td>
+                <td>${product.productPrice}</td>
+                <td>${product.productQuantity}</td>
+                <td><img width="100px" src="${product.linkProductImage}" alt="${product.productName}"></td>
+                <td>${product.productDescription}</td>
+                <td>
+                    <button type="button" data-id="${product.id}" class="btn btn-danger ms-3">Eliminar</button>
+                </td>
+                <td>
+                    <button type="button" data-id="${product.id}" class="btn btn-warning ms-3">Editar</button>
+                </td>
+            </tr>
+            `;
+    });
+
 }
 
-// function update existing product by id in product table ---> no nos quiere funcionar y rompe el codigo
+// function update existing product by id in product table 
 
-/* async function updateProduct(id, productName, productPrice, productQuantity, linkProductImage, productDescription) {
+async function updateProduct(id, productName, productPrice, productQuantity, linkProductImage, productDescription) {
+    const user = JSON.parse(localStorage.getItem('userOnline'));
     await fetch(URL_PRODUCT + id, {
         method: 'PUT',
-        body: JSON.stringify({ productName, productPrice, productQuantity, linkProductImage, productDescription }),
+        body: JSON.stringify({
+            id,productName, productPrice, productQuantity, linkProductImage, productDescription, ownerAgricola: {
+                ownerName: user.ownerName,
+                ownerLastName: user.ownerLastName,
+                ownerDocument: user.ownerDocument,
+                ownerTown: user.ownerTown,
+                ownerPhoneNumber: user.ownerPhoneNumber,
+                ownerEmail: user.ownerEmail,
+                ownerNumberWhatsapp: user.ownerNumberWhatsapp
+            }
+        }),
         headers: {
             'Content-Type': 'application/json'
         }
-    })
-} */
-
+    });
+}
 // function delete existing product by id in product table
 async function deleteProduct(id) {
     await fetch(URL_PRODUCT + id, {
