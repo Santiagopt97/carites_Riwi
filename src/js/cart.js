@@ -1,12 +1,23 @@
 const URL = "http://localhost:3000/favorite"
 const section = document.querySelector("#section")
+const divDelete = document.querySelector("#div-delete")
+console.info(divDelete)
+let id
+
+section.addEventListener("click", async function(event){
+    if (event.target.classList.contains("btn-danger")) {
+        const id = event.target.getAttribute("data-id")
+        await deleteItem(id) // le pasamos el id obtenido y eliminamos
+        await index() // recargamos la lista
+    }
+})
 
 async function index() {
     const response = await fetch(URL)
     const data = await response.json()
 
     data.forEach(element => {
-        section.innerHTML += `
+        divDelete.innerHTML += `
         <article id="article" class="card mb-3 cards">
                 <div id="card-id" class="row g-0 ">
                     <div id="img-card" class="col-md-4 text-center ">
@@ -40,7 +51,7 @@ async function index() {
                         </div>
                             
                             <div class="w-50">
-                                <button type="button" data-id=${element.id} class="btn btn-danger ms-3">Delete</button>
+                                <button type="button" data-id=${element.id} class="btn btn-danger ms-3">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -52,12 +63,11 @@ async function index() {
 
 index()
 
-window.addEventListener('load', async function clearFavorites(){
-    await fetch(URL_API_FAVORITES, {
-        method: 'DELETE',
+async function deleteItem(id) { // Eliminamos una categoría
+
+    await fetch(URL + "/" + id, {
+        method: "DELETE" // Especificamos el método
     })
-});
-
-
+}
 
 
