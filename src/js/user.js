@@ -5,13 +5,15 @@ const productPrice = document.querySelector('#productPrice')
 const productQuantity = document.querySelector('#productQuantity')
 const linkProductImage = document.querySelector('#productImageURL')
 const productDescription = document.querySelector('#productDescription')
-const btnLogout=document.querySelector('#logout-button')
+const btnLogout = document.querySelector('#logout-button')
 
 
 const URL_PRODUCT = 'http://localhost:3000/agriculturalProducts/'
+
 let id
+
 // Function de logout
-btnLogout.addEventListener('click', () =>{
+btnLogout.addEventListener('click', () => {
     // Delete user information from localStorage
     localStorage.removeItem('userOnline')
     // Redirect user to login page
@@ -19,6 +21,8 @@ btnLogout.addEventListener('click', () =>{
 })
 
 index()
+
+// Event listener submit to call the create and update function and save the data
 form.addEventListener('submit', async (event) => {
     event.preventDefault()
     if (!id) {
@@ -31,6 +35,7 @@ form.addEventListener('submit', async (event) => {
     form.reset()
 })
 
+// Event listener click to execute the delete and update function.
 tbody.addEventListener('click', async (event) => {
     if (event.target.classList.contains('btn-danger')) {
         const id = event.target.getAttribute('data-id')
@@ -47,12 +52,14 @@ tbody.addEventListener('click', async (event) => {
     }
 })
 
+// function search for a product by id in the api
 async function find(id) {
     const response = await fetch(URL_PRODUCT + id)
     const data = await response.json()
     return data
 }
 
+// function create product in product table and save it with the corresponding user credentials
 async function create(productName, productPrice, productQuantity, linkProductImage, productDescription) {
     const user = JSON.parse(localStorage.getItem('userOnline'))
     const newProducts = {
@@ -75,6 +82,7 @@ async function create(productName, productPrice, productQuantity, linkProductIma
     })
 }
 
+// function list products in table by farmer
 async function index() {
     const user = JSON.parse(localStorage.getItem('userOnline'));
 
@@ -106,6 +114,7 @@ async function index() {
     })
 }
 
+// function update existing product by id in product table
 async function updateProduct(id, productName, productPrice, productQuantity, linkProductImage, productDescription) {
     await fetch(URL_PRODUCT + id, {
         method: 'PUT',
@@ -116,6 +125,7 @@ async function updateProduct(id, productName, productPrice, productQuantity, lin
     })
 }
 
+// function delete existing product by id in product table
 async function deleteProduct(id) {
     await fetch(URL_PRODUCT + id, {
         method: 'DELETE'

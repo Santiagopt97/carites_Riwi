@@ -2,10 +2,10 @@ const URL_API = `http://localhost:3000/agriculturalProducts`
 const URL_API_FAVORITES = `http://localhost:3000/favorite`
 
 const sectionProducts = document.querySelector(".section-products")
-const btnDetails = document.querySelector("#button-card-product")
 
 index(sectionProducts);
 
+// rotating card function displaying all products in the api 
 async function index(sectionProducts) {
     const response = await fetch(URL_API);
     const products = await response.json();
@@ -34,7 +34,7 @@ async function index(sectionProducts) {
             </div>
         `;
     });
-
+    // modal details of each product with farmer contact and add to favorites
     document.querySelectorAll('.details-btn').forEach(button => {
         button.addEventListener('click', function () {
             const product = JSON.parse(this.getAttribute('data-product'));
@@ -61,13 +61,14 @@ async function index(sectionProducts) {
     });
 }
 
-
+// Function to add to bag of favorites
 export async function addToFavorites(product) {
     const response = await fetch(URL_API_FAVORITES)
     const favorite = await response.json()
     
     let productExist = false
 
+    // checks if the product id already exists in the list of favorite objects
     for (let i = 0; i < favorite.length; i++) {
         if (favorite[i].id === product.id) {
             productExist = true
@@ -75,6 +76,7 @@ export async function addToFavorites(product) {
             break
         }
     }
+    //if id noy exist in favorite, add favorite
     if (!productExist) { 
         await fetch(URL_API_FAVORITES, {
             method: 'POST',

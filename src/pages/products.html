@@ -12,9 +12,12 @@
         content="Agricultores, Materia prima, Exedentes de producción, productos agricolas no estéticos, puente tecnológico, productos agricolas,frutas,verduras, pienso, mermeladas, guacamole">
     <meta name="sitedomain" content="https://carites.com/" />
     <meta name="organization" content="carites-riwi" />
-    <meta name="author" content="Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón " />
-    <meta name="designer" content="Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón" />
-    <meta name="copyright" content="© 2024 Carites. Todos los derechos reservados Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón">
+    <meta name="author"
+        content="Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón " />
+    <meta name="designer"
+        content="Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón" />
+    <meta name="copyright"
+        content="© 2024 Carites. Todos los derechos reservados Eddy Sebastián Herrera Hernández, Cristhian Vásquez Arroyave, Wendy Karina Pineda Parra,  Santiago Pineda Tobón">
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="15days" />
@@ -26,36 +29,39 @@
 </head>
 
 <body>
-    <header>
-        <header id="header">
-            <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 z-3 px-4" id="navbar">
-                <section class=" justify-content-center  ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="burguer">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <article class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav d-flex align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" aria-current="page" href="/">Inicio</a>
-                            </li>
+    <!-- product header with navigation bar, access to home page and favorites -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 z-3 px-4" id="navbar">
+            <section class=" justify-content-center  ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="burguer">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <article class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="/">Inicio</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold" href="./cart.html">Favoritos</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./cart.html">Favoritos</a>
+                        </li>
+                    </ul>
+                    <div class="position-a">
+                        <ul>
+                            <a href="./cart.html" target="_blank"><i class="bi bi-bag-heart-fill nav-link"
+                                    id="fav-cart"></i><span></span></a>
                         </ul>
-                        <div class="position-a">
-                            <ul>
-                                <a href="./cart.html" target="_blank"><i
-                                        class="bi bi-bag-heart-fill nav-link" id="fav-cart"></i><span></span></a>
-                            </ul>
-                        </div>
-                    </article>
-                </section>
-            </nav>
-        </header>
+                    </div>
+                </article>
+            </section>
+        </nav>
     </header>
+
+    <!-- main section products -->
     <main>
+
+        <!-- section welcome to the product page -->
         <section class="section-top">
             <h1>Bienvenidos!</h1>
             <p><b>¡Únete a nosotros y sé parte de un futuro más
@@ -64,20 +70,25 @@
                 <b>Tú apoyo contribuye a la reducción de desperdicios y a la sostenibilidad del campo.</b>
             </p>
         </section>
+
+        <!-- rotary card section -->
         <section class="section-products">
 
         </section>
 
+        <!-- detail modal for each product and with add favorites button -->
         <section class="modal-product">
 
             <div class="modal fade show" id="product-modal" tabindex="-1" aria-labelledby="product-modal-label"
                 aria-hidden="true">
                 <div class="modal-dialog modal-xl" style="width: 520px; margin-top: 100px;">
                     <div class="modal-content">
+                        <!-- modal header -->
                         <div class="modal-header ">
                             <h5 class="modal-title" id="product-modal-label">Detalles de Producto</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                         </div>
+                        <!-- modal body -->
                         <div class="modal-body d-flex g-3" id="modal-info-content-all">
                             <div class="text-center pe-5" id="content-image-modal">
                                 <img id="modal-product-image" src="" alt="Producto" class="img-fluid"
@@ -90,13 +101,15 @@
                                     <span class="text-warning p-0 m-0 fs-2">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
                                 </div>
                                 <p id="modal-product-price" class="m-1 p-0 fw-bold fs-2 text-center"></p>
-                                <div class="text-center" >
-                                    <button type="button" class="btn btn-primary fw-bold" id="button-card-product">Agregar a
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary fw-bold"
+                                        id="button-card-product">Agregar a
                                         favoritos</button>
                                 </div>
                             </div>
                         </div>
-                        <article class="modal-footer" id="footer-info-modal" >
+                        <!-- modal foot -->
+                        <article class="modal-footer" id="footer-info-modal">
                             <ul id="ul-description-owner">
                                 <h5 class="m-1 text-capitalize fw-bold" id="modal-owner-name"></h5>
                                 <h5 class="m-1 text-capitalize fw-bold" id="modal-owner-lastname"></h5>
@@ -105,9 +118,14 @@
                                 <h5 class="m-1 text-capitalize fst-italic">(Ant) </h5>
                             </ul>
                             <ul id="ul-contact-owner">
-                                <a id="modal-owner-email" href="mailto:formacion@riwi.io" target="_blank"><i class="bi bi-envelope-fill fs-2 color-icon-detail"></i></a>
-                                <a id="modal-owner-phone" href="tel:+3243812089" target="_blank"><i class="bi bi-telephone-fill fs-2 color-icon-detail"></i></a>
-                                <a id="modal-owner-whatsapp" href="https://wa.me/573017325327/?text=Buen día TransRiwi! Me gustaría conocer más información acerca de la plataforma de "><img id="wpp-detail-modal" src="/public/icons/whatsapp.webp" width="40px" height="40px" border-radius="50px" alt="Icono de whatsapp"></a>
+                                <a id="modal-owner-email" href="mailto:formacion@riwi.io" target="_blank"><i
+                                        class="bi bi-envelope-fill fs-2 color-icon-detail"></i></a>
+                                <a id="modal-owner-phone" href="tel:+3243812089" target="_blank"><i
+                                        class="bi bi-telephone-fill fs-2 color-icon-detail"></i></a>
+                                <a id="modal-owner-whatsapp"
+                                    href="https://wa.me/573017325327/?text=Buen día TransRiwi! Me gustaría conocer más información acerca de la plataforma de "><img
+                                        id="wpp-detail-modal" src="/public/icons/whatsapp.webp" width="40px"
+                                        height="40px" border-radius="50px" alt="Icono de whatsapp"></a>
                             </ul>
                         </article>
                     </div>
@@ -116,7 +134,7 @@
 
         </section>
     </main>
-
+    <!-- footer section products -->
     <footer class="d-flex flex-wrap justify-content-around align-items-center p-4" id="footer">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">

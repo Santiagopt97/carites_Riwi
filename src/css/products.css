@@ -11,7 +11,7 @@
   font-family: "Montserrat"
 }
 
-.paragraph {
+p {
   font-family: "Open Sans"
 }
 
@@ -40,6 +40,7 @@ body {
   background: var(--cream);
 }
 
+/* header styles */
 #navbar {
   font-size: 19px;
   background-color: var(--cream);
@@ -78,6 +79,7 @@ body {
   }
 }
 
+/* body styles  */
 .section-top {
   display: flex;
   flex-direction: column;
@@ -96,6 +98,7 @@ main .section-products {
   min-width: 50vh;
 }
 
+/* rotary card styles */
 .card-product {
   position: relative;
   width: 300px;
@@ -219,15 +222,13 @@ main .section-products {
 }
 .card-product:hover .front-card {
   transform: perspective(600px) rotateY(180deg);
-
 }
 
 .card-product:hover .back-card {
   transform: perspective(600px) rotateY(360deg);
 }
 
-/* Styles al modal */
-
+/* Styles modal */
 #product-modal .modal-content {
   background-color: var(--cream);
   color: var(--olive-green);
@@ -286,8 +287,8 @@ main .section-products {
   box-shadow: 0 5px 10px var(--olive-green);
 
 }
-/* styles footer modal */
 
+/* styles footer modal */
 #footer-info-modal {
   display: flex;
   flex-direction: row;
@@ -315,8 +316,8 @@ main .section-products {
   align-items: center;
   gap: 20px;
 }
-/* styles footer */
 
+/* styles footer */
 #footer {
   background-color: var(--beige);
   color: var(--bg-green);
