@@ -23,7 +23,7 @@ async function index(sectionProducts) {
                             <p class="p-card-product">${product.productDescription}</p>
                         </div>
                         <div class="price-info">
-                            <h3 class="h3-card-product"><span>$ </span>${product.productPrice}<span> COP </span></h3>
+                            <h3 class="h3-card-product">${product.productPrice}<span> COP </span></h3>
                             <p class="p-card-product">Kilo</p>
                         </div>
                         <div class="price-info">
@@ -41,7 +41,7 @@ async function index(sectionProducts) {
             document.getElementById('modal-product-image').src = product.linkProductImage;
             document.getElementById('modal-product-name').innerText = product.productName;
             document.getElementById('modal-product-description').innerText = product.productDescription;
-            document.getElementById('modal-product-price').innerText = `$ ${product.productPrice} COP`;
+            document.getElementById('modal-product-price').innerText = `${product.productPrice} COP`;
             document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
             document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
             document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
@@ -87,3 +87,14 @@ export async function addToFavorites(product) {
         });
     }
 }
+
+async function clearFavorites() {
+    await fetch(URL_API_FAVORITES, {
+        method: 'DELETE'
+    });
+}
+
+window.addEventListener('load', async () => {
+    await clearFavorites();
+    await index(sectionProducts);
+});
