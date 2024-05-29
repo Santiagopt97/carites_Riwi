@@ -90,6 +90,17 @@ body {
   text-align: center;
 }
 
+.section-top h2 {
+  color: var(--olive-green);
+  font-size: 48px;
+  padding: 10px 0;
+}
+.section-top p {
+  color: var(--olive-green);
+  font-size: 24px;
+  width: 70%;
+}
+
 main .section-products {
   display: flex;
   align-items: center;
