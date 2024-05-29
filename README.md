@@ -91,6 +91,6 @@ https://docs.google.com/document/d/1ZBo9l2eiLBpwhbpgIMcdLNdAfPTpedrvpRZFKbWfLi8/
 
 ---
 
-© [2024] [Riwi]. Todos los derechos reservados.
+© 2024 Riwi. Todos los derechos reservados.
 
 ---
