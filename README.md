@@ -1,5 +1,5 @@
 # Carites 
-![](https://github.com/Santiagopt97/carites_Riwi/blob/develop/public/img/Logo_Mesa%20de%20trabajo%201.png){width='100px'}
+![](https://github.com/Santiagopt97/carites_Riwi/blob/develop/public/img/Logo_Mesa%20de%20trabajo%201.png)
 - Plataforma donde encontrarás productos agrícolas para materia prima y para consumo
 
 * Somos una aplicación que conecta a agricultores colombianos con consumidores y organizaciones que requieran productos como materia prima, para facilitar la venta de productos agrícolas (en deterioro o que no cumplan con los estándares estéticos del mercado) y así reducir la pérdida de alimentos en la producción agrícola, el desaprovechamiento de recursos empleados y los sobrecostos para el sector productivo, contribuyendo a la economía del consumo.
