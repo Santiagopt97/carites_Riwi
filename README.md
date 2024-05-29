@@ -1,96 +1,96 @@
 # Carites 
 ![](https://github.com/Santiagopt97/carites_Riwi/blob/develop/public/img/Logo_Mesa%20de%20trabajo%201.png)
-- Plataforma donde encontrarás productos agrícolas para materia prima y para consumo
+- Platform where you will find agricultural products for raw material and for consumption.
 
-* Somos una aplicación que conecta a agricultores colombianos con consumidores y organizaciones que requieran productos como materia prima, para facilitar la venta de productos agrícolas (en deterioro o que no cumplan con los estándares estéticos del mercado) y así reducir la pérdida de alimentos en la producción agrícola, el desaprovechamiento de recursos empleados y los sobrecostos para el sector productivo, contribuyendo a la economía del consumo.
+* We are an application that connects Colombian farmers with consumers and organizations that require products as raw material, to facilitate the sale of agricultural products (in deterioration or that do not meet the aesthetic standards of the market) and thus reduce food loss in agricultural production, waste of resources used and cost overruns for the productive sector, contributing to the economy of consumption.
 
-# El privilegio de alimentarnos y no desperdiciar!
+# The privilege of feeding ourselves and not wasting!
 
 
-## ¿Por qué?
-
-<p align="center">
-  En Colombia, 9,7 toneladas de alimentos se pierden cada año debido a que no cumplen con los estándares estéticos del mercado o sufren deterioro antes de ser comercializados. El 40% de los alimentos que se pierden están en la producción agropecuaria, esto equivale a 3,8 millones de toneladas anuales en Colombia, por la falta de planes de abastecimiento que pongan en "una balanza la oferta y la demanda" para no producir de más, además de la escasez de rutas terciarias o buen estado de las vías para el transporte de alimentos.
-</p>
-<p align="center">
-  Esta situación no solo genera un desperdicio considerable de alimentos aptos para el consumo, sino que también implica un desaprovechamiento de los recursos utilizados en su producción, como tierra, agua, energía e insumos agrícolas. Además, la pérdida de estos productos genera sobrecostos para los agricultores, quienes ven reducidos sus ingresos al no poder vender toda su cosecha.
-</p>
-<p align="center">
-  A pesar de la calidad nutricional de muchos de estos productos, la falta de canales adecuados para su comercialización y distribución contribuye a que grandes cantidades de alimentos terminen desechados. Esto no solo afecta la economía del sector agrícola, sino que también tiene un impacto negativo en la sostenibilidad ambiental, al incrementar las emisiones de CO2 y otros residuos derivados de la producción no consumida.
-</p>
-<p align="center">
-  Asimismo, las organizaciones sociales y empresas que podrían aprovechar estos productos como materia prima, ya sea para consumo humano o para otros usos como el compostaje, enfrentan dificultades para acceder a ellos debido a la falta de una plataforma que facilite la conexión directa con los agricultores.
-</p>
-
-## ¿Para qué?
+## Why?
 
 <p align="center">
-  En este contexto, surge la necesidad de desarrollar una aplicación web para conectar a los agricultores colombianos con consumidores y organizaciones interesadas en adquirir estos productos agrícolas. Esta plataforma permitiría facilitar la venta de productos que, aunque no cumplan con los estándares estéticos, son aptos para el consumo o pueden ser utilizados como materia prima. Al reducir la pérdida de alimentos, optimizar el uso de recursos y disminuir los sobrecostos para los agricultores, la aplicación contribuirá a una economía del consumo más sostenible y eficiente, mejorando la accesibilidad de alimentos a precios más bajos para los consumidores y promoviendo la responsabilidad social y ambiental.
+  In Colombia, 9.7 tons of food are lost every year because they do not meet the aesthetic standards of the market or suffer deterioration before being marketed. 40% of the food that is lost is in agricultural production, equivalent to 3.8 million tons per year in Colombia, due to the lack of supply plans that put in “a balance the supply and demand” to not overproduce, in addition to the shortage of tertiary routes or good condition of the roads for food transportation.
+</p>
+<p align="center">
+ This situation not only generates a considerable waste of food fit for consumption, but also implies a waste of the resources used in its production, such as land, water, energy and agricultural inputs. In addition, the loss of these products generates cost overruns for farmers, who see their income reduced because they are unable to sell their entire harvest.
+</p>
+<p align="center">
+  Despite the nutritional quality of many of these products, the lack of adequate marketing and distribution channels means that large quantities of food end up being discarded. This not only affects the economy of the agricultural sector, but also has a negative impact on environmental sustainability by increasing CO2 emissions and other waste derived from unconsumed production.
+</p>
+<p align="center">
+ Also, social organizations and companies that could take advantage of these products as raw material, either for human consumption or for other uses such as composting, face difficulties in accessing them due to the lack of a platform that facilitates direct connection with farmers.
 </p>
 
-## ¿Para quién?
+## What is this our application for?
 
 <p align="center">
-  Nuestra aplicación se dirige a agricultores de la región antioqueña que cuentan con excedentes de producción agrícola con probabilidad de pérdidas porque no cumplen con los estándares comerciales. También está orientada a consumidores y empresas que pueden dar uso a estos productos, como productores de mermelada, ganaderos, empresas de compostaje y fabricantes de fertilizantes, entre otros. La plataforma facilita la venta y el aprovechamiento de estos productos como materia prima, promoviendo la sostenibilidad y la reducción de desperdicios alimentarios.
+  In this context, the need arises to develop a web application to connect Colombian farmers with consumers and organizations interested in acquiring these agricultural products. This platform would facilitate the sale of products that, although they do not meet aesthetic standards, are suitable for consumption or can be used as raw material. By reducing food loss, optimizing the use of resources and reducing cost overruns for farmers, the application will contribute to a more sustainable and efficient consumer economy, improving the accessibility of food at lower prices for consumers and promoting social and environmental responsibility.
 </p>
 
-# Integrantes
+## Who is it for?
+
+<p align="center">
+ Our application is aimed at farmers in the Antioquia region who have agricultural production surpluses that are likely to be lost because they do not meet commercial standards. It is also aimed at consumers and companies that can make use of these products, such as jam producers, livestock farmers, composting companies and fertilizer manufacturers, among others. The platform facilitates the sale and use of these products as raw material, promoting sustainability and reducing food waste.
+</p>
+
+# Members
 * Eddy Sebastián Herrera Hernández
 * Cristhian Vásquez Arroyave
 * Wendy Karina Pineda Parra
 * Santiago Pineda Tobón
 
 ## API
--   Guarda todos los productos creados por un usuario agricultor resgistrado 
+-   Saves all products created by a registered farmer user. 
     ``` bash
      http://localhost:3000/agriculturalProducts
     ```
--   Guarda los productos favoritos de un consumidor que no está resgistrado
+-   Saves the favorite products of an unregistered consumer
     ``` bash
      http://localhost:3000/favorite
     ```
--    Guarda la información de cada usuario que se registró
+-    Saves the information of each registered user
      ``` bash
      http://localhost:3000/user
      ```
-### Tecnologías Utilizadas
-- Se utilizó para el Frontend 
+### Technologies Used
+- It was used for the Frontend 
    - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
     - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
     - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
    - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-- Se utilizó para el Backend  
+- It was used for the Backend
         Json-Server
 
 
-### Instalación y Uso
-Para instalar el proyecto primero 
- - Clonar Repositorio
+### Installation and Use
+To install the project first 
+ - Clon te repository
 ```bash
 git clone https://github.com/Santiagopt97/carites_Riwi.git
 ```
-- Luego se debe instalar dependencias 
+- Then dependencies must be installed 
     ```
     npm i 
     ```
-- Se corre el json server
+- You have to run the json-server
     ```
     npx json-server public/data/database.json
     ```
-- Iniciar la aplicación con OPEN LIVE SERVER
+- Starting the application with OPEN LIVE SERVER
 
 
-### Tablero de Actividades
+### Activity Board
 https://trello.com/invite/b/060qbKq1/ATTI1b99913e026ad99889177fe994a7cc9B8959B8C/romeo-riwi
 ### Mockup
 https://drive.google.com/file/d/1IOGpRWzrGce7wgGGMG8twy-0ThLBmfXv/view?usp=sharing
-### Documentaciòn
+### Documentation
 https://docs.google.com/document/d/1ZBo9l2eiLBpwhbpgIMcdLNdAfPTpedrvpRZFKbWfLi8/edit?usp=sharing
 
 
 ---
 
-© 2024 Riwi. Todos los derechos reservados.
+© 2024 Riwi. All rights reserved.
 
 ---
