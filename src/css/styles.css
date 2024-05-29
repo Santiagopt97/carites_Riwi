@@ -56,6 +56,11 @@
   transition: 0.4s;
 }
 
+                
+#logout-button{
+  display: none;
+}
+
 #link-ingreso {
   text-decoration: none;
   color: var(--beige);

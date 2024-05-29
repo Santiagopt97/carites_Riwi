@@ -7,6 +7,7 @@ const linkProductImage = document.querySelector('#productImageURL')
 const productDescription = document.querySelector('#productDescription')
 const btnLogout=document.querySelector('#logout-button')
 
+
 const URL_PRODUCT = 'http://localhost:3000/agriculturalProducts/'
 let id
 // Function de logout
@@ -16,7 +17,6 @@ btnLogout.addEventListener('click', () =>{
     // Redirect user to login page
     window.location.href = '/'
 })
-
 
 index()
 form.addEventListener('submit', async (event) => {
