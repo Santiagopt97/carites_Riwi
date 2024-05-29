@@ -1,15 +1,18 @@
+/* Aca importamos el normalize, los iconos de bootstrap y las fuentes */
 @import url(./normalize.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* titulos */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /* Textos */
 
+/* Declaramos las variables para los colores que usaremos */
 :root {
     --beige: #F5E6C5;
     --green: #3F422F;
     --naranja: #D68B30;
   }
 
+/* Empiezan los estilos del header, de la navbar */
 #navbar{
     font-size: 19px;
     background-color: var(--beige);
@@ -32,7 +35,7 @@
     transition: 0.4s;
     background-color: var(--naranja);
 }
-  
+
 .login {
     cursor: pointer;
     border: 0;
@@ -49,7 +52,7 @@
     position: absolute;
     right: 5vw;
 }
-  
+
 .register:hover,
 .login:hover {
     color: white;
@@ -57,31 +60,24 @@
     background-color: var(--naranja);
 }
 
-.title{
-    font-family: 'Montserrat';
+/* Todos los titulos tendran este tipo de letra */
+h1,h2,h3,h4,h5{
+    font-family: Montserrat;
 }
 
-.paragraph{
+/* Todos los parrafos tendran este tipo de letra */
+p{
     font-family: 'Open Sans';
     font-size: large;
 }
 
-
-
+/* Esta clase coloca el fondo en verde */
 .bg-green{
     background-color: var(--green);
     color: var(--beige);
     font-family: 'Montserrat', sans-serif;
 }
 
-#navbar {
-    font-size: 19px;
-    background-color: transparent;
-    backdrop-filter: blur(1px);
-    background-color: var(--beige);
-  }
-
-  
 main{
     margin-top: 4%;
 }
@@ -99,7 +95,7 @@ main{
     max-height: 100%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .cards{
@@ -121,7 +117,7 @@ main{
     color: var(--naranja);
 }
 #wpp-detail-modal{
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
 #ul-contact-owner{
@@ -142,19 +138,20 @@ main{
     background-color: var(--beige);
     color: var(--green);
     font-size: 18px;
-  
+
   }
-  
+
   .img-footer {
     width: 80px;
     border-radius: 50%;
-  
+
   }
-  
+
   .bi {
     font-size: 38px;
   }
-  
+
+  /* Aca empezamos los media para hacer la pagina responsive */
   @media(max-width: 1300px) {
 
     main{
@@ -219,5 +216,5 @@ main{
     #wpp-detail-modal{
         width: 25px;
     }
-    
+
   }

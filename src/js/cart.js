@@ -38,7 +38,7 @@ async function index() {
                             <div class="card-body d-flex flex-column  w-50">
                                 <h2 id="titulo" class="card-title title text-capitalize ">${element.productName}</h2>
                                 <p class="card-text paragraph text-capitalize">${element.productDescription}</p>
-                                <p class="card-text paragraph ">${element.productPrice}</p>
+                                <p class="card-text paragraph ">${element.productPrice} COP</p>
                             </div>
                             <div class="card-body d-flex flex-column  w-50">
                                 <h2 id="titulo" class="card-title title text-capitalize ">${element.ownerAgricola.ownerName} ${element.ownerAgricola.ownerLastName}</h2>
