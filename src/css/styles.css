@@ -2,6 +2,8 @@
 
 /* variables */
 
+/* variables */
+
 :root {
   --beige: #F5E6C5;
   --verde: #3F422F;
@@ -14,7 +16,7 @@
 
 /* Header */
 
-#navbar{
+#navbar {
   font-size: 19px;
   background-color: transparent;
   backdrop-filter: blur(1px);
@@ -28,7 +30,6 @@
 #navbar.scrolled {
   background-color: var(--beige);
 }
-
 
 .register {
   cursor: pointer;
@@ -55,13 +56,13 @@
   transition: 0.4s;
 }
 
-#link-ingreso{
+#link-ingreso {
   text-decoration: none;
   color: var(--beige);
 }
 
 .modal-content {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 15px;
 }
@@ -90,7 +91,7 @@ h1 {
 .form-control {
   background-color: var(--beige);
   padding-left: 10px;
-  border: 2px solid   var(--naranja);
+  border: 2px solid var(--naranja);
   border-radius: 15px;
 }
 
@@ -107,9 +108,8 @@ h1 {
   padding: 0.5em 0;
 }
 
-.myform #btn-init-sesion:hover {
-  background-color: var(--beige);
-  color: var(--verde);
+#btn-init-sesion:hover {
+
   border-radius: 15px;
   border: var(--naranja) 2px solid;
   font-size: 1.2em;
@@ -123,7 +123,7 @@ p {
 }
 
 p a {
-  color: var(--naranja)!important;
+  color: var(--naranja) !important;
   text-decoration: none;
 }
 
@@ -132,9 +132,21 @@ p a:hover {
   font-weight: bold;
   font-size: 1.2em;
 }
-.link-terms-register{
-  color: var(--naranja)!important;
+
+.link-terms-register {
+  color: var(--naranja) !important;
   text-decoration: none;
+}
+
+#name-lastname {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.name-column {
+  display: flex;
+  flex-direction: column;
 }
 
 #bg-fooondo-form {
@@ -143,10 +155,19 @@ p a:hover {
   border-radius: 15px;
 }
 
-#input-email-login,
-#input-password-login {
+#reg {
   background: var(--beige);
   color: var(--verde);
+  border-radius: 14px;
+  border: var(--naranja) 2px solid;
+  padding: 0.5em 0;
+}
+
+.input-email-login,
+.input-password-login {
+  background: var(--beige);
+  color: var(--verde);
+
 }
 
 #btn-init-sesion {
@@ -155,7 +176,7 @@ p a:hover {
   border: 2px solid var(--beige);
 }
 
-.text-init-login{
+.text-init-login {
   cursor: pointer;
 }
 
@@ -171,6 +192,8 @@ p a:hover {
   background-color: var(--naranja);
 }
 
+
+
 /* section banner */
 
 #banner {
@@ -183,7 +206,6 @@ p a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
 }
 
@@ -199,6 +221,7 @@ p a:hover {
   width: 100%;
   height: auto;
 }
+
 
 #container-text-banner {
   color: var(--beige);
@@ -216,6 +239,7 @@ p a:hover {
   font-weight: 600;
 }
 
+
 /* section about us */
 
 .about-us {
@@ -224,7 +248,7 @@ p a:hover {
   text-align: center;
 }
 
-.about-us p{
+.about-us p {
   color: var(--verde);
 }
 
@@ -250,6 +274,9 @@ p a:hover {
   height: 80vh;
 }
 
+
+
+
 /* section stats */
 
 #stats {
@@ -260,6 +287,7 @@ p a:hover {
   flex-direction: row;
   align-items: center;
 }
+
 
 #stats-text {
   color: var(--beige);
@@ -278,8 +306,11 @@ p a:hover {
 
 /* section cards */
 
+/* section cards */
+
 .hero-section {
   padding: 2rem 0;
+  background-color: var(--beige);
   background-color: var(--beige);
 }
 
@@ -291,7 +322,6 @@ p a:hover {
   color: #D68B30;
   font-weight: 400;
 }
-
 
 .hero-section_cards {
   padding: 5rem 0;
@@ -309,6 +339,7 @@ p a:hover {
   padding: 1.6rem;
   height: 100%;
   opacity: 0;
+  background: RGBA(0, 0, 0, 0.8);
   background: RGBA(0, 0, 0, 0.8);
   color: var(--beige);
   -webkit-transition: all 0.4s ease;
@@ -341,7 +372,6 @@ p a:hover {
   font-weight: 300;
 }
 
-
 .card-1 {
   background: url('https://images.pexels.com/photos/16957839/pexels-photo-16957839/free-photo-of-paisaje-hombre-granjero-retrato.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-position: center;
@@ -373,10 +403,13 @@ p a:hover {
 
 /* section contact us */
 
+/* section contact us */
+
 .labels {
   display: flex;
   flex-direction: column;
 }
+
 
 .contact {
   background-image: url(../../public/img/Detalles-17.png);
@@ -391,10 +424,13 @@ p a:hover {
   justify-content: center;
 }
 
+
 .contact h2 {
   font-size: 40px;
   padding: 42px 0 10px 0;
 }
+
+
 
 .contenedor-contacto {
   width: 50vw;
@@ -420,6 +456,7 @@ p a:hover {
   background-color: var(--beige);
 }
 
+
 .form button {
   align-self: center;
   border-radius: 12px;
@@ -438,6 +475,7 @@ p a:hover {
 }
 
 /* Footer */
+
 
 #footer {
   background-color: var(--beige);
@@ -464,9 +502,16 @@ p a:hover {
     margin: 0 auto;
   }
 }
+/* responsive */
+
+@media (max-width: 576px) {
+  .myform {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 
 @media(max-width: 990px) {
-
 
   .position-a {
     width: 100%;
@@ -476,14 +521,17 @@ p a:hover {
     right: 0vw;
   }
 
+
   #stats {
     display: flex;
     flex-direction: column-reverse;
   }
 
+
   #stats-text {
     width: 100%;
   }
+
 
   #iframe {
     width: 100%;

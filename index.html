@@ -1,6 +1,5 @@
 <!DOCTYPE html> <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +20,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/styles.css">
-    <title>navbar</title>
+    <title>Carites</title>
 </head>
 
-
 <body>
+
+
     <!------------ start section header -->
 
     <header id="header">
-        <nav class="navbar navbar-expand-lg  position-fixed top-0 w-100 z-3 px-4" id="navbar">
-            <section class=" justify-content-center  ">
+        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 z-3 px-4" id="navbar">
+            <section class=" justify-content-center ">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,19 +74,22 @@
                                 aria-label="Close"></button>
                             <div class="myform " id="bg-fooondo-form">
                                 <h1 class="text-center">Iniciar Sesión</h1>
-                                <form>
+                                <form id="form-login">
                                     <div class="mb-3 mt-4">
                                         <label for="input-email-login" class="form-label">Usuario</label>
-                                        <input type="email" class="form-control" id="input-email-login"
+                                        <input type="email" class="form-control input-email-login" id="email-login"
                                             aria-describedby="email-help" placeholder="usuario">
                                     </div>
                                     <div class="mb-3">
                                         <label for="input-password-login" class="form-label">Contraseña</label>
-                                        <input type="password" class="form-control" id="input-password-login"
+                                        <input type="password" class="form-control input-password-login" id="password-login"
                                             placeholder="contraseña">
                                     </div>
-                                    <button type="submit" class="btn mt-3" id="btn-init-sesion"><a id="link-ingreso" href="./src/pages/users.html">Ingresar</a></button>
-                                    <p><i>¿No tienes cuenta? <br><b><a class="text-init-login" data-bs-target="#modal-form-register" data-bs-toggle="modal">Registrate</a></b></i></p>
+                                    <button type="submit" class="btn mt-3" id="btn-init-sesion"><a id="link-ingreso"
+                                            >Ingresar</a></button>
+                                    <p><i>¿No tienes cuenta? <br><b><a class="text-init-login"
+                                                    data-bs-target="#modal-form-register"
+                                                    data-bs-toggle="modal">Registrate</a></b></i></p>
                                 </form>
                             </div>
                         </div>
@@ -107,42 +110,190 @@
                                 aria-label="Close"></button>
                             <div class="myform " id="bg-fooondo-form">
                                 <h1 class="text-center">Registrate</h1>
-                                <form>
-                                    <div class="mb-2 mt-2">
-                                        <label for="input-email-login" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="input-email-login"
-                                            aria-describedby="email-help" placeholder="usuario">
+                                <form id="form-register">
+                                    <div class="mb-2 mt-2" id="name-lastname">
+                                        <div class="name-column">
+                                            <label for="input-email-login" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" aria-describedby="email-help"
+                                                id="username">
+                                        </div>
+                                        <div class="name-column">
+                                            <label for="input-email-login" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" aria-describedby="email-help"
+                                                id="last-name">
+                                        </div>
                                     </div>
                                     <div class="mb-2 mt-2">
-                                        <label for="input-email-login" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="input-email-login"
-                                            aria-describedby="email-help" placeholder="usuario">
+                                        <label for="input-email-login" class="form-label">Telefono</label>
+                                        <input type="tel" class="form-control" aria-describedby="email-help" id="tel">
                                     </div>
+                                    <div class="mb-2 mt-2">
+                                        <label for="input-email-login" class="form-label">WhatsApp</label>
+                                        <input type="tel" class="form-control" aria-describedby="email-help"
+                                            placeholder="+57" id="whatsapp">
+                                    </div>
+                                    <div class="mb-2 mt-2">
+                                        <label for="input-email-login" class="form-label">Cedula de Ciudadania</label>
+                                        <input type="text" class="form-control" aria-describedby="email-help"
+                                            placeholder="CC" id="cedula">
+                                    </div>
+                                    <div class="mb-2 mt-2 d-flex flex-column">
+                                        <label for="reg" class="form-label">Ubicacion</label>
+                                        <select name="region" id="reg">
+                                            <option selected disabled>Selecciona la Region</option>
+                                            <optgroup label="Uraba">
+                                                <option value="sel">Necocli</option>
+                                                <option value="sel">Arboletes</option>
+                                                <option value="sel">San Pedro de Uraba</option>
+                                                <option value="sel">Turbo</option>
+                                                <option value="sel">Apartado</option>
+                                                <option value="sel">Carepa</option>
+                                                <option value="sel">Chigorodo</option>
+                                                <option value="sel">Mutata</option>
+                                                <option value="sel">Murindo</option>
+                                                <option value="sel">Vigia del Fuerte</option>
+                                            </optgroup>
+
+                                            <optgroup label="Suroeste">
+                                                <option value="sel">Urrao</option>
+                                                <option value="sel">Betulia</option>
+                                                <option value="sel">Salgar</option>
+                                                <option value="sel">Concordia</option>
+                                                <option value="sel">Amagá</option>
+                                                <option value="sel">Andes</option>
+                                                <option value="sel">Angelopolís</option>
+                                                <option value="sel">Betania</option>
+                                                <option value="sel">Caramanta</option>
+                                                <option value="sel">Ciudad Bolívar</option>
+                                                <option value="sel">Fredonia</option>
+                                                <option value="sel">Híspania</option>
+                                                <option value="sel">Jardín</option>
+                                                <option value="sel">Jericó</option>
+                                                <option value="sel">La Pintada</option>
+                                                <option value="sel">Montebello</option>
+                                                <option value="sel">Pueblorrico</option>
+                                                <option value="sel">Santa Bárbara</option>
+                                                <option value="sel">Támesis</option>
+                                                <option value="sel">Tarso</option>
+                                                <option value="sel">Titiribí</option>
+                                                <option value="sel">Valparaiso</option>
+                                                <option value="sel">Venecia</option>
+                                            </optgroup>
+                                            <optgroup label="Occidente">
+                                                <option value="sel">Abriaquí</option>
+                                                <option value="sel">Anzá</option>
+                                                <option value="sel">Armenia</option>
+                                                <option value="sel">Buritica</option>
+                                                <option value="sel">Caicedo</option>
+                                                <option value="sel">Cañasgordas</option>
+                                                <option value="sel">Dabeiba</option>
+                                                <option value="sel">Ebéjico</option>
+                                                <option value="sel">Frontino</option>
+                                                <option value="sel">Giraldo</option>
+                                                <option value="sel">Heliconia</option>
+                                                <option value="sel">Liborina</option>
+                                                <option value="sel">Ólaya</option>
+                                                <option value="sel">Peque</option>
+                                                <option value="sel">Sabanalarga</option>
+                                                <option value="sel">San Jéronimo</option>
+                                                <option value="sel">Sopetran</option>
+                                                <option value="sel">Santa fè de Antioquia</option>
+                                                <option value="sel">Sopetran</option>
+                                                <option value="sel">Uramita</option>
+                                            </optgroup>
+                                            <optgroup label="Norte">
+                                                <option value="sel">Santa Rosa de Osos</option>
+                                                <option value="sel">San Pedro de los Milagros</option>
+                                                <option value="sel">San José de la Montaña</option>
+                                                <option value="sel">Don Matías</option>
+                                                <option value="sel">Entrerrìos</option>
+                                                <option value="sel">Belmira</option>
+                                                <option value="sel">Carolina del Principe</option>
+                                                <option value="sel">Gómez Plata</option>
+                                                <option value="sel">Yarumal</option>
+                                                <option value="sel">Angostura</option>
+                                                <option value="sel">Ítuango</option>
+                                            </optgroup>
+                                            <optgroup label="Bajo Cauca">
+                                                <option value="sel">Nechí</option>
+                                                <option value="sel">Caucasia</option>
+                                                <option value="sel">El Bagre</option>
+                                                <option value="sel">Caceres</option>
+                                                <option value="sel">Zaragoza</option>
+                                                <option value="sel">Tarazá</option>
+                                                <option value="sel">Segovia</option>
+                                                <option value="sel">Remedios</option>
+                                                <option value="sel">Amalfi</option>
+                                                <option value="sel">Anorí</option>
+                                                <option value="sel">Briceño</option>
+                                                <option value="sel">Valdivia</option>
+                                            </optgroup>
+                                            <optgroup label="Magdalena Medio">
+                                                <option value="sel">Caracolí</option>
+                                                <option value="sel">Maceo</option>
+                                                <option value="sel">Puerto Berrio</option>
+                                                <option value="sel">Puerto Nare</option>
+                                                <option value="sel">Puerto Triunfo</option>
+                                                <option value="sel">Yondó</option>
+                                            </optgroup>
+                                            <optgroup label="Oriente">
+                                                <option value="sel">Rionegro</option>
+                                                <option value="sel">La Ceja</option>
+                                                <option value="sel">Guarne</option>
+                                                <option value="sel">El Carmen de Viboral</option>
+                                                <option value="sel">El Retiro</option>
+                                                <option value="sel">Marinilla</option>
+                                                <option value="sel">Abejorral</option>
+                                                <option value="sel">Alejandria</option>
+                                                <option value="sel">Argelia</option>
+                                                <option value="sel">Cocorna</option>
+                                                <option value="sel">Concepción</option>
+                                                <option value="sel">El Peñol</option>
+                                                <option value="sel">El Santuario</option>
+                                                <option value="sel">Granada</option>
+                                                <option value="sel">Guatapé</option>
+                                                <option value="sel">La Únion</option>
+                                                <option value="sel">Nariño</option>
+                                                <option value="sel">San Carlos</option>
+                                                <option value="sel">San Francisco</option>
+                                                <option value="sel">San Luís</option>
+                                                <option value="sel">San Ráfael</option>
+                                                <option value="sel">San Vicente Ferrer</option>
+                                            </optgroup>
+
+                                        </select>
+                                    </div>
+
                                     <div class="mb-2 mt-2">
                                         <label for="input-email-login" class="form-label">Correo Electrónico</label>
-                                        <input type="email" class="form-control" id="input-email-login"
+                                        <input type="email" class="form-control input-email-login" id="email"
                                             aria-describedby="email-help" placeholder="usuario@ejemplo.com">
                                     </div>
                                     <div class="mb-2">
                                         <label for="input-password-login" class="form-label">Contraseña</label>
-                                        <input type="password" class="form-control" id="input-password-login"
-                                            placeholder="contraseña">
+                                        <input type="password" class="form-control input-password-login" id="password">
                                     </div>
                                     <div class="mb-2">
                                         <label for="input-password-login" class="form-label">Confirmar
                                             Contraseña</label>
-                                        <input type="password" class="form-control" id="input-password-login"
-                                            placeholder="confirma contraseña">
+                                        <input type="password" class="form-control input-password-login"
+                                            id="confirm-password">
                                     </div>
                                     <div>
-                                      <label for="terms-conditions-user">Términos y condiciones</label><br>
-                                      <span>
-                                          <input type="checkbox" name="aceptoterminos" id="terms-conditions-user" required value="Acepto">Acepto
-                                          <a class="link-terms-register" href="https://drive.google.com/file/d/1Wfi9-002WMy5V-mFDkrriIbzqypehUbb/view" target="_blank">los términos y condiciones</a>
-                                      </span>
-                                  </div>
-                                    <button type="submit" class="btn mt-3" id="btn-init-sesion">Registrate</button>
-                                    <p><i>¿Ya tienes una cuenta? <br><b><a class="text-init-login" data-bs-target="#modal-form" data-bs-toggle="modal">Ingresa aquí</a></b></i></p>
+                                        <label for="terms-conditions-user">Términos y condiciones</label><br>
+                                        <span>
+                                            <input type="checkbox" name="aceptoterminos" id="terms-conditions-user"
+                                                 value="Acepto">Acepto
+                                            <a class="link-terms-register"
+                                                href="https://drive.google.com/file/d/1Wfi9-002WMy5V-mFDkrriIbzqypehUbb/view"
+                                                target="_blank">los términos y condiciones</a>
+                                        </span>
+                                    </div>
+                                    <button type="submit" class="btn mt-3" id="btn-init-sesion"><a id="link-ingreso"
+                                        >Registrate</a></button>
+                                    <p><i>¿Ya tienes una cuenta? <br><b><a class="text-init-login"
+                                                    data-bs-target="#modal-form" data-bs-toggle="modal">Ingresa
+                                                    aquí</a></b></i></p>
                                 </form>
                             </div>
                         </div>
@@ -207,7 +358,7 @@
             </div>
         </section>
         <!------------------- section cards -->
-
+        
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-section_title">Conoce los beneficios de <br><b>unirte a nuestra familia</b></h1>
@@ -277,11 +428,12 @@
             <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <img src="/public/img/Logo_Mesa de trabajo 1.png" alt="" class="img-footer">
 
+
             </a>
             <span class="mb-3 mb-md-0 ">© 2024 Riwi Company</span>
         </div>
 
-        <ul class="nav col-md-4 mx-5 px-5  justify-content-end list-unstyled d-flex">
+        <ul class="nav col-md-4 mx-5 px-5 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank"><i
                         class="bi bi-facebook"></i></a></li>
             <li class="ms-3"><a class="text-body-secondary" href="https://x.com/?lang=en" target="_blank"><i
@@ -291,12 +443,12 @@
         </ul>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="./src/js/main.js"></script>
+    <script  type="module" src="./src/js/register.js"></script>
+    <script  type="module" src="./src/js/login.js"></script>
 </body>
-
 
 </html>
