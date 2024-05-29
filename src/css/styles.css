@@ -58,7 +58,27 @@
 
                 
 #logout-button{
-  
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 160px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  background-color: var(--naranja);
+}
+#user-button{
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 2px;
+  width: 100px;
+  padding: 6px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
 }
 
 #link-ingreso {
@@ -191,7 +211,8 @@ p a:hover {
 }
 
 .register:hover,
-.login:hover {
+.login:hover,
+#logout-button:hover {
   color: white;
   box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
   background-color: var(--naranja);
