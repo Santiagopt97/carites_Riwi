@@ -186,6 +186,23 @@
         "ownerEmail": "carlos.martinez@gmail.com",
         "ownerNumberWhatsapp": "573219876543"
       }
+    },
+    {
+      "id": "1d7c",
+      "productName": "pera",
+      "productPrice": "265",
+      "productQuantity": "10",
+      "linkProductImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpePVyM9q3IkqOkvjdnpnyuBOJvxD96vD-g&s",
+      "productDescription": "mhzhksc",
+      "ownerAgricola": {
+        "ownerName": "carlos",
+        "ownerLastName": "martinez",
+        "ownerDocument": "101010257",
+        "ownerTown": "urabá",
+        "ownerPhoneNumber": "3219876543",
+        "ownerEmail": "carlos.martinez@gmail.com",
+        "ownerNumberWhatsapp": "573219876543"
+      }
     }
   ],
   "favorite": [

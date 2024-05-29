@@ -67,11 +67,20 @@ async function create(productName, productPrice, productQuantity, linkProductIma
 }
 
 async function index() {
+    const user = JSON.parse(localStorage.getItem('userOnline'));
+
+    if (!user) {
+        alert("Debes iniciar sesión para ver tus productos.")
+        return
+    }
+
     const response = await fetch(URL_PRODUCT)
     const data = await response.json()
 
+    const userProducts = data.filter(product => product.ownerAgricola.ownerEmail === user.ownerEmail)
+
     tbody.innerHTML = ''
-    data.forEach(product => {
+    userProducts.forEach(product => {
         tbody.innerHTML += `
         <td>${product.productName}</td>
         <td>${product.productPrice}</td>
