@@ -171,6 +171,42 @@
       }
     }
   ],
+  "favorite": [
+    {
+      "id": "def456",
+      "productName": "tomate",
+      "productDescription": "Tomate cherry orgánico, fresco y jugoso",
+      "productQuantity": "10",
+      "productPrice": "8000",
+      "linkProductImage": "https://img.freepik.com/foto-gratis/vista-superior-tomates-amarillos-rojos-mesa-madera_141793-9768.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1715731200&semt=ais_user",
+      "ownerAgricola": {
+        "ownerName": "maría",
+        "ownerLastName": "lópez",
+        "ownerDocument": "101010256",
+        "ownerTown": "támesis",
+        "ownerPhoneNumber": "3145678920",
+        "ownerEmail": "maria.lopez@gmail.com",
+        "ownerNumberWhatsapp": "573145678920"
+      }
+    },
+    {
+      "id": "abc123",
+      "productName": "lechuga",
+      "productDescription": "Lechuga crespa con algunas afectaciones",
+      "productQuantity": "6",
+      "productPrice": "5000",
+      "linkProductImage": "https://img.freepik.com/fotos-premium/persona-parada-jardin-sosteniendo-lechuga_118124-48608.jpg",
+      "ownerAgricola": {
+        "ownerName": "julio",
+        "ownerLastName": "gómez",
+        "ownerDocument": "101010255",
+        "ownerTown": "cocorná",
+        "ownerPhoneNumber": "3243812089",
+        "ownerEmail": "espruebaemail@gmail.com",
+        "ownerNumberWhatsapp": "573243812089"
+      }
+    }
+  ],
   "user": [
     {
       "id": "abc123",
@@ -194,4 +230,5 @@
       "ownerEmail": "",
       "ownerPassword": ""
     }
-]
+  ]
+}
