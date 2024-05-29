@@ -13,13 +13,9 @@ form.addEventListener("submit", async (event) => {
 
     event.preventDefault()
     const checkPassword = validatePasswords(password, confirmPassword)
-    const checkEmail = await validateEmail(email)
-    window.location.href = "./src/pages/users.html"
-    console.log("melo");
-    await registerUser(username, lastName, email, password, tel, whatsapp, cedula, ubication)
-    if(checkPassword === true && checkEmail === true){
-   
-        
+    if(checkPassword == true){
+        await registerUser(username, lastName, email, password, tel, whatsapp, cedula, ubication)
+        location.reload()
      }else{
        alert("las contraseñas no coinciden o el email ya existe")
      }
