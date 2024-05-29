@@ -87,3 +87,10 @@ https://trello.com/invite/b/060qbKq1/ATTI1b99913e026ad99889177fe994a7cc9B8959B8C
 https://drive.google.com/file/d/1IOGpRWzrGce7wgGGMG8twy-0ThLBmfXv/view?usp=sharing
 ### Documentaciòn
 https://docs.google.com/document/d/1ZBo9l2eiLBpwhbpgIMcdLNdAfPTpedrvpRZFKbWfLi8/edit?usp=sharing
+
+
+---
+
+© [2024] [Riwi]. Todos los derechos reservados.
+
+---
