@@ -169,6 +169,23 @@
         "ownerEmail": "andres.castro@gmail.com",
         "ownerNumberWhatsapp": "573126781234"
       }
+    },
+    {
+      "id": "5945",
+      "productName": "manzana",
+      "productPrice": "2500",
+      "productQuantity": "5",
+      "linkProductImage": "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "productDescription": "manzanas ricas",
+      "ownerAgricola": {
+        "ownerName": "p",
+        "ownerLastName": "p",
+        "ownerDocument": "123",
+        "ownerTown": "Selecciona la Region",
+        "ownerPhoneNumber": "4566",
+        "ownerEmail": "p@p.com",
+        "ownerNumberWhatsapp": "12"
+      }
     }
   ],
   "favorite": [
