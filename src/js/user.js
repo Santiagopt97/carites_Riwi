@@ -1,64 +1,94 @@
-const productForm = document.getElementById('productForm');
-const productList = document.getElementById('productList');
-let products = [];
+const tbody = document.querySelector('#productList')
+const form=document.querySelector('#productForm')
+const productName=document.querySelector('#productName')
+const productPrice=document.querySelector('#productPrice')
+const productQuantity=document.querySelector('#productQuantity')
+const linkProductImage=document.querySelector('#productImageURL')
+const productDescription=document.querySelector('#productDescription')
 
-// Función para agregar un nuevo producto
-function addProduct(event) {
-    event.preventDefault();
-    
-    // Obtener los valores del formulario
-    const name = document.getElementById('productName').value;
-    const price =document.getElementById('productPrice').value;
-    const quantity =document.getElementById('productQuantity').value;
-    const imageURL = document.getElementById('productImageURL').value;
-    const description = document.getElementById('productDescription').value;
-    
-    // Crear un objeto de producto
-    const product = {
-        id: Date.now(), // ID único generado con la marca de tiempo
-        name: name,
-        price: price,
-        quantity: quantity,
-        imageURL: imageURL,
-        description: description
-    };
+const URL_PRODUCT='http://localhost:3000/agriculturalProducts/'
+let id
 
-    // Agregar el producto a la lista
-    products.push(product);
-    
-    // Limpiar el formulario
-    productForm.reset();
-    
-    // Actualizar la tabla de productos
-    renderProducts();
+index()
+form.addEventListener('submit',async (event)=>{
+    event.preventDefault()
+    if(!id){
+        await create(productName.value, productPrice.value, productQuantity.value, linkProductImage.value, productDescription.value)
+    } else{
+        await updateProduct(id,productName.value, productPrice.value, productQuantity.value, linkProductImage.value,productDescription.value)
+        id=undefined
+    }
+    await index()
+    form.reset()
+})
+
+tbody.addEventListener('click',async (event)=>{
+    if(event.target.classList.contains('btn-danger')){
+        const id = event.target.getAttribute('data-id')
+        await deleteProduct(id)
+        await index()
+    }else if (event.target.classList.contains('btn-warning')){
+        id= event.target.getAttribute('data-id')
+        const productFound=await find(id)
+        productName.value=productFound.productName
+        productPrice.value=productFound.productPrice
+        productQuantity.value=productFound.productQuantity
+        linkProductImage.value=productFound.linkProductImage
+        productDescription.value=productFound.productDescription
+    }
+})
+
+async function find(id){
+    const response = await fetch(URL_PRODUCT+id)
+    const data = await response.json()
+    return data
 }
 
-// Función para renderizar la tabla de productos
-function renderProducts() {
-    // Limpiar la tabla de productos
-
-
-    productList.innerHTML = '';
-    // Iterar sobre la lista de productos y crear filas para la tabla
-    products.forEach(product => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${product.name}</td>
-            <td>$${product.price}</td>public/data/database.json
-            <td>${product.quantity}</td>
-            <td>${product.imageURL}</td>
-            <td>${product.description}</td>            `
-            productList.appendChild(row);
-    });
-}
-function deleteProduct(productId) {
-    products = products.filter(product => product.id !== productId);
-    renderProducts();
+async function create(productName, productPrice, productQuantity, linkProductImage, productDescription){
+    const newProducts={productName, productPrice, productQuantity, linkProductImage, productDescription}
+    await fetch(URL_PRODUCT,{
+        method:'POST',
+        body:JSON.stringify(newProducts),
+        headers:{
+            'Content-Type':'application/json'
+        },
+    })
 }
 
-// Escuchar el evento de envío del formulario para agregar un nuevo producto
-productForm.addEventListener('submit', addProduct);
+async function index(){
+    const response  = await fetch(URL_PRODUCT)
+    const data = await response.json()
+    
+    tbody.innerHTML=''
+    data.forEach(product => {
+        tbody.innerHTML += `
+        <td>${product.productName}</td>
+        <td>${product.productPrice}</td>
+        <td>${product.productQuantity}</td>
+        <td><img width="100px" src=${product.linkProductImage} alt=${product.productName}></td>
+        <td>${product.productDescription}</td>
+        <td>
+        <button type="button" data-id=${product.id} class="btn btn-danger ms-3">Delete</button>
+        </td>
+        <td>
+        <button type="button" data-id=${product.id} class="btn btn-warning ms-3">Edit</button>
+        </td>
+        `
+    })
+}
 
-// Renderizar la tabla de productos inicial
-renderProducts();
+async function updateProduct(id,productName,productPrice,productQuantity,linkProductImage,productDescription){
+    await fetch(URL_PRODUCT+id,{
+        method: 'PUT',
+        body:JSON.stringify({productName,productPrice,productQuantity,linkProductImage,productDescription}),
+        headers:{
+            'Content-Type':'application/json'
+        }
+    })
+}
 
+async function deleteProduct(id){
+    await fetch(URL_PRODUCT+id,{
+        method:'DELETE'
+    })
+}
