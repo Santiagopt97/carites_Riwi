@@ -3,10 +3,10 @@ const URL_API_FAVORITES = `http://localhost:3000/favorite`
 
 const sectionProducts = document.querySelector(".section-products")
 
-index(sectionProducts);
+indexP(sectionProducts);
 
 // rotating card function displaying all products in the api 
-async function index(sectionProducts) {
+async function indexP(sectionProducts) {
     const response = await fetch(URL_API);
     const products = await response.json();
 
@@ -88,13 +88,3 @@ export async function addToFavorites(product) {
     }
 }
 
-async function clearFavorites() {
-    await fetch(URL_API_FAVORITES, {
-        method: 'DELETE'
-    });
-}
-
-window.addEventListener('load', async () => {
-    await clearFavorites();
-    await index(sectionProducts);
-});
