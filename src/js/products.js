@@ -42,13 +42,13 @@ async function index(sectionProducts) {
             document.getElementById('modal-product-name').innerText = product.productName;
             document.getElementById('modal-product-description').innerText = product.productDescription;
             document.getElementById('modal-product-price').innerText = `$ ${product.productPrice} COP`;
-            document.getElementById('modal-owner-name').innerText = product.ownerName;
-            document.getElementById('modal-owner-lastname').innerText = product.ownerLastName;
-            document.getElementById('modal-owner-town').innerText = product.ownerTown;
+            document.getElementById('modal-owner-name').innerText = product.ownerAgricola.ownerName;
+            document.getElementById('modal-owner-lastname').innerText = product.ownerAgricola.ownerLastName;
+            document.getElementById('modal-owner-town').innerText = product.ownerAgricola.ownerTown;
 
-            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerEmail}`;
-            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerPhoneNumber}`;
-            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerNumberWhatsapp}`;
+            document.querySelector('#ul-contact-owner a[href^="mailto:"]').href = `mailto:${product.ownerAgricola.ownerEmail}`;
+            document.querySelector('#ul-contact-owner a[href^="tel:"]').href = `tel:${product.ownerAgricola.ownerPhoneNumber}`;
+            document.querySelector('#ul-contact-owner a[href^="https://wa.me/"]').href = `https://wa.me/${product.ownerAgricola.ownerNumberWhatsapp}`;
 
 
             const myModal = new bootstrap.Modal(document.getElementById('product-modal'));
