@@ -188,40 +188,6 @@
         "ownerEmail": "maria.lopez@gmail.com",
         "ownerNumberWhatsapp": "573145678920"
       }
-    },
-    {
-      "id": "abc123",
-      "productName": "lechuga",
-      "productDescription": "Lechuga crespa con algunas afectaciones",
-      "productQuantity": "6",
-      "productPrice": "5000",
-      "linkProductImage": "https://img.freepik.com/fotos-premium/persona-parada-jardin-sosteniendo-lechuga_118124-48608.jpg",
-      "ownerAgricola": {
-        "ownerName": "julio",
-        "ownerLastName": "gómez",
-        "ownerDocument": "101010255",
-        "ownerTown": "cocorná",
-        "ownerPhoneNumber": "3243812089",
-        "ownerEmail": "espruebaemail@gmail.com",
-        "ownerNumberWhatsapp": "573243812089"
-      }
-    },
-    {
-      "id": "b561",
-      "productName": "paspa",
-      "productPrice": "123",
-      "productQuantity": "10",
-      "linkProductImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpePVyM9q3IkqOkvjdnpnyuBOJvxD96vD-g&s",
-      "productDescription": "esta paspa prueba",
-      "ownerAgricola": {
-        "ownerName": "carlos",
-        "ownerLastName": "martinez",
-        "ownerDocument": "101010257",
-        "ownerTown": "urabá",
-        "ownerPhoneNumber": "3219876543",
-        "ownerEmail": "carlos.martinez@gmail.com",
-        "ownerNumberWhatsapp": "573219876543"
-      }
     }
   ],
   "user": [
