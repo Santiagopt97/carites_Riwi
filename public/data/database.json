@@ -169,23 +169,6 @@
         "ownerEmail": "andres.castro@gmail.com",
         "ownerNumberWhatsapp": "573126781234"
       }
-    },
-    {
-      "id": "7119",
-      "productName": "cd",
-      "productPrice": "650",
-      "productQuantity": "1655",
-      "linkProductImage": "https://images.pexels.com/photos/347926/pexels-photo-347926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "productDescription": ",mashdnk",
-      "ownerAgricola": {
-        "ownerName": "p",
-        "ownerLastName": "p",
-        "ownerDocument": "123",
-        "ownerTown": "Selecciona la Region",
-        "ownerPhoneNumber": "4566",
-        "ownerEmail": "p@p.com",
-        "ownerNumberWhatsapp": "12"
-      }
     }
   ],
   "favorite": [
@@ -252,17 +235,6 @@
       "ownerEmail": "carlos.martinez@gmail.com",
       "ownerNumberWhatsapp": "573219876543",
       "ownerPassword": "573219876543"
-    },
-    {
-      "id": "94b5",
-      "ownerName": "p",
-      "ownerLastName": "p",
-      "ownerDocument": "1214740",
-      "ownerTown": "Puerto Berrio",
-      "ownerPhoneNumber": "1214",
-      "ownerNumberWhatsapp": "571214",
-      "ownerEmail": "p@p.com",
-      "ownerPassword": "123"
     }
   ]
 }
