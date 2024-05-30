@@ -39,12 +39,12 @@
         </div>
     </header>
     <nav class="nav">
-        <a id="btn-1" href="#box">Introduccion</a>
+        <a id="btn-1" href="#box">Introducción</a>
         <a id="btn-2" href="#productForm">Crear</a>
         <a id="btn-3" href="#productTable">Listar</a>
         <button type="button" id="logout-button"><a id="btn-4">Salir</a></button>
     </nav>
-<!-- main -->
+    <!-- main -->
     <main class="hero">
 
         <video muted autoplay loop>
@@ -56,54 +56,55 @@
             <p id="parragraf">Acá podrás darle valor a tu esfuerzo y dedicación, conectando directamente con
                 consumidores que aprecian tu trabajo y la calidad de tus productos. Cada semilla que siembres y cada
                 fruto que coseches encontrará su lugar en el corazón de quienes valoran lo que haces, ayudándote a
-                crecer y prosperar junto a tu comunidad..</p>
+                crecer y prosperar junto a tu comunidad.</p>
             <h2>CREA, COMERCIALIZA Y CRECE.</h2>
         </div>
 
     </main>
-<!-- container manual user -->
+    <!-- container manual user -->
     <section id="container-user">
-        <h2 id="title-manual">Manual Ingreso de Usuarios</h2>
-        <article id="box">
-            <h2>PRODUCTO</h2>
-            <img src="/public/img/Introduction-image.webp">
-            <div id="capa">
-                <p>-Ingresa tu Producto <br>Lo que desees ofertar.</p>
-            </div>
+        <h2 class="text-center" id="title-manual">Manual Ingreso de Usuarios</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+            <article id="box">
+                <h2>PRODUCTO</h2>
+                <img class="rounded-top-3 " src="/public/img/Introduction-image.webp">
+                <div id="capa">
+                    <p>-Ingresa tu Producto <br>Lo que desees ofertar.</p>
+                </div>
 
-        </article>
+            </article>
 
-        <article id="box">
-            <h2>PRECIO Y CANTIDAD</h2>
-            <img src="/public/img/price-units image.webp">
-            <div id="capa">
-                <p>-Ingresa el Precio del Producto (*kg) <br> -Ingresa La cantidad <br> (en Kilogramos).</p>
-            </div>
+            <article id="box">
+                <h2>PRECIO Y CANTIDAD</h2>
+                <img class="rounded-top-3 " src="/public/img/price-units image.webp">
+                <div id="capa">
+                    <p>-Ingresa el Precio del Producto (*kg) <br> -Ingresa La cantidad <br> (en Kilogramos).</p>
+                </div>
 
-        </article>
+            </article>
 
-        <article id="box">
-            <h2>Imagen,Ubicación y Descripción</h2>
-            <img src="/public/img/ubicationimage.webp">
-            <div id="capa">
-                <p>-Ingresa una imagen del producto <br> -Agrega una
-                    Descripción breve de tu producto.</p>
-            </div>
+            <article id="box">
+                <h2>IMAGEN DESCRIPCIÓN</h2>
+                <img class="rounded-top-3 " src="/public/img/ubicationimage.webp">
+                <div id="capa">
+                    <p>-Ingresa una imagen del producto <br> -Agrega una
+                        Descripción breve de tu producto.</p>
+                </div>
 
-        </article>
+            </article>
 
-        <article id="box">
-            <h2>CREAR</h2>
-            <img src="/public/img/create image.webp">
-            <div id="capa">
-                <p>-Presiona el botón "CREAR" <br></p>
-            </div>
+            <article id="box">
+                <h2>CREAR</h2>
+                <img class="rounded-top-3 " src="/public/img/create image.webp">
+                <div id="capa">
+                    <p>-Presiona el botón "CREAR" <br></p>
+                </div>
 
-        </article>
-
+            </article>
+        </div>
     </section>
 
-<!-- section upload product -->
+    <!-- section upload product -->
     <section class="access">
 
         <form id="productForm">
@@ -126,26 +127,27 @@
         </form>
 
     </section>
-<!-- section CRUD -->
-    <section class="crud">
-            <table class="table table-secondary">
-                <thead>
-                  <tr>
+    <!-- section CRUD -->
+    <section  class="d-flex justify-content-center" >
+        <article class="crud">
+        <table class="table table-secondary" id="productTable">
+            <thead>
+                <tr>
                     <th scope="col">Nombre</th>
                     <th scope="col">Precio Unitario</th>
                     <th scope="col">Cantidad(kg)</th>
                     <th scope="col">Imagen</th>
                     <th>Descripción</th>
                     <th colspan="2">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody id="productList">
+                </tr>
+            </thead>
+            <tbody id="productList">
 
-                </tbody>
+            </tbody>
         </table>
-
+    </article>
     </section>
-<!-- footer -->
+    <!-- footer -->
     <footer class="d-flex flex-wrap justify-content-around align-items-center p-4" id="footer">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-1 ms-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">

@@ -17,18 +17,21 @@
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
-
-
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat";
 }
 
-body {
+body p{
+    font-family: "Open Sans";
+}
 
-    font-family: "Montserrat", sans-serif;
+
+body {
     background-color: var(--cream);
 }
 
 h1 {
-
     font-size: 45px;
 }
 
@@ -41,7 +44,6 @@ p {
     font-weight: 800;
 }
 
-
 .head {
     background-image: url(/public/img/users.webp);
     background-repeat: no-repeat;
@@ -49,8 +51,6 @@ p {
     background-position: center;
     height: 320px;
     padding: 50px 80px;
-    font-family: "Open Sans", sans-serif;
-
 }
 
 .nav-pages {
@@ -58,6 +58,7 @@ p {
     align-items: center;
     text-align: center;
     margin: 5px;
+    font-weight: bold;
 }
 
 .nav-pages a {
@@ -66,31 +67,37 @@ p {
     padding-right: 8px;
 }
 
-.nav {
-
-    display: flex;
-    justify-content: space-evenly;
-    height: 60px;
-
+.nav-pages a:hover {
+    color: var(--brown-yellow);
 }
 
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
 
 .nav a {
     text-decoration: none;
-    color: rgb(18, 17, 17);
-    font-family: "Open Sans", sans-serif;
+    color: var(--olive-green);
     font-weight: 900;
-
+}
+.nav a:hover{
+    text-decoration: none;
+    color: var(--brown-yellow);
+    font-weight: 900;
 }
 
 #logout-button {
     background-color: var(--brown-yellow);
     border-radius: 5px;
     padding: 5px 30px;
+    color: var(--olive-green);
 }
 
 #logout-button a:hover {
-    color: var(--olive-green);
+    color: var(--cream);
 }
 
 .hero {
@@ -98,10 +105,7 @@ p {
     position: relative;
     border-radius: 0 0 350px 0;
     background-color: var(--dark-green);
-
 }
-
-
 
 video {
     position: absolute;
@@ -114,7 +118,6 @@ video {
     background-color: #1c1c1d;
     opacity: 0.9;
     mix-blend-mode: overlay;
-
 }
 
 .welcome {
@@ -122,21 +125,16 @@ video {
     left: 20%;
     top: 8%;
     color: var(--cream);
-
 }
 
 .access {
-
-
     height: 950px;
     width: 100%;
     background-color: var(--cream);
     background-image: url(/public/img/access.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 0 0 0 350px;
-
-
-
-
 }
 
 .access-block {
@@ -144,209 +142,37 @@ video {
     align-items: center;
 }
 
-.crud {
-
-    width: 60%;
-    height: 100%;
-    margin: 200px 400px;
-    border: 2px inset var(--brown-yellow)
-}
-
 .crud h2 {
     color: var(--olive-green);
     margin-left: 30%;
     margin-bottom: 5%;
-    
+}
+.crud{
+    min-width: 50%;
+    max-width: 80%;
 }
 
 .img-footer {
     width: 80px;
     border-radius: 50%;
-
 }
 
-
-
-#container-user {
-
-
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    background-color: var(--olive-green);
-    border-radius: 350px 0px 0 0;
-}
-
-
-
-#btn-1 {
-
-    color: var(--olive-green);
-    padding-top: 14px;
-    width: 200px;
-    font-size: 28px;
-    font-weight: 300;
-}
-
-
-#btn-2 {
-
-    color: var(--olive-green);
-    padding-top: 14px;
-    width: 200px;
-    font-size: 28px;
-    font-weight: 300;
-
-}
-
-#btn-3 {
-    color: var(--olive-green);
-    padding-top: 14px;
-    width: 200px;
-    font-size: 28px;
-    font-weight: 300;
-
-}
-
-#btn-4 {
-    color: var(--olive-green);
-    padding-top: 14px;
-    width: 200px;
-    font-size: 28px;
-    font-weight: 300;
-
-}
-
-#btn-1:hover {
-    color: #EEA83B;
-}
-
-#btn-2:hover {
-    color: var(--mustard-yellow);
-}
-
-#btn-3:hover {
-    color: var(--mustard-yellow);
-}
-
-#btn-4:hover {
-    color: #EEA83B;
-}
-
-
-#productForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 600px;
-    height: 750px;
-    margin: 50px;
-    margin-left: 560px;
-    gap: 10px;
-}
-
-
-#productForm input {
-    width: 380px;
-    height: 29px;
-    text-align: center;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: var(--cream);
-
-}
-
-label {
-    font-size: 20px;
-    color: var(--cream);
-    margin: 0px !important;
-
-}
-
-textarea {
-    width: 380px;
-    color: var(--olive-green);
-    height: 80px;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid var(--olive-green);
-    background-color: var(--cream);
-}
-
-#send-product{
-    width: 380px;
-    height: 50px;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: 2px solid var(--olive-green);
-    background-color: var(--brown-yellow);
-    color: var(--olive-green);
-    margin-top: 20px;
-}
-#productForm h4 {
-    margin-top: 8px;
-    padding-top: 10px;
-    color: var(--cream);
-}
-
-.table{
-    margin: 0%;
-    width: 100%;
-    
-}
-
-.table thead{
-    text-align: center;
-}
-
-.table tbody{
-    text-align: center;
-}
-
-
-#name-f {
-    text-align: center;
-    padding-top: 15px;
-
-}
-
-#create {
-
-    margin-top: 25px;
-    height: 50px;
-    width: 90px;
-    font-family: sans-serif;
-    font-size: 22px;
-    border-radius: 15px;
+footer {
     background-color: var(--cream);
     color: var(--olive-green);
+    font-size: 18px;
 }
-
-#parragraf {
-
-    width: 580px;
-    font-weight: 300;
-    text-align: center;
-    align-items: center;
-    margin-left: 80px;
+.bi {
+    font-size: 38px;
+}
+footer a {
     color: var(--cream);
 }
 
-#parragraf-2 {
-    color: var(--cream);
+footer a:hover {
+    color: var(--brown-yellow);
 }
 
-#title-manual {
-    position: absolute;
-    top: 145%;
-    color: var(--cream);
-}
 
 #box {
 
@@ -397,118 +223,171 @@ textarea {
     text-align: center;
 }
 
-#introduction {
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:  transparent;
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+}
+
+form label {
+    color: var(--cream);
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid var(--brown-yellow);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: var(--brown-yellow);
+    color: var(--cream);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--mustard-yellow);
+}
+
+.table {
+    width: 100%;
+    margin: 50px 0;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 15px;
     text-align: center;
-    width: 550px;
-    margin-left: 350px;
-    margin-top: 200px;
+    border-bottom: 1px solid var(--olive-green);
+}
+
+.table th {
+    background-color: var(--olive-green);
     color: var(--cream);
 }
 
-#pf {
-    font-weight: 300;
+.table tbody tr:nth-child(even) {
+    background-color: var(--green-luminoso-claro);
 }
 
-#divisor {
-    background-color: #134B42;
-    opacity: 0.5;
-    height: 65px;
+.table tbody tr:hover {
+    background-color: var(--mustard-yellow);
+    color: var(--cream);
 }
 
-
-#button-table {
-    height: 70px;
-    align-items: center;
-    text-align: center;
-    background-color: var(--olive-green);
+.table .actions {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#button-table button {
-    background-color: var(--cream);
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 100px;
-    height: 40px;
+.table .actions button {
+    background-color: var(--brown-yellow);
+    color: var(--cream);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.table .actions button:hover {
+    background-color: var(--mustard-yellow);
+}
+
+@media (max-width: 1024px) {
+    .head {
+        padding: 50px 40px;
+    }
+
+    .welcome {
+        left: 15%;
+        top: 10%;
+        font-size: 0.8em;
+    }
+
+    .access {
+        height: 700px;
+    }
+
+    form {
+        width: 70%;
+    }
 }
 
 @media (max-width: 768px) {
-
-    /* Modificar estilos del encabezado */
     .head {
-        padding: 10px;
+        padding: 50px 20px;
     }
 
-    /* Modificar estilos de la navegación */
     .nav {
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        height: auto;
     }
 
-    /* Modificar estilos del hero */
-    .hero {
-        padding: 20px;
+    .welcome {
+        left: 10%;
+        top: 12%;
+        font-size: 0.6em;
     }
 
-    /* Modificar estilos del container-user */
     #container-user {
         flex-direction: column;
-    }
-
-    /* Modificar estilos del acceso */
-    .access {
-        padding: 20px;
-    }
-
-    /* Modificar estilos del CRUD */
-    .crud {
-        padding: 20px;
-        border: 2px inset var(--brown-yellow)
-    }
-
-    /* Modificar estilos del footer */
-    #footer {
-        flex-direction: column;
         align-items: center;
+    }
+
+    #box {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .crud {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    form {
+        width: 90%;
     }
 }
 
-/* Estilos para pantallas de hasta 576px de ancho */
-@media (max-width: 576px) {
-
-    /* Modificar estilos del encabezado */
+@media (max-width: 480px) {
     .head {
-        padding: 5px;
+        padding: 50px 10px;
     }
 
-    /* Modificar estilos de la navegación */
-    .nav {
-        font-size: 0.8rem;
+    .nav a {
+        font-size: 0.8em;
     }
 
-    /* Modificar estilos del hero */
-    .hero {
-        padding: 10px;
+    .welcome {
+        left: 5%;
+        top: 15%;
+        font-size: 0.5em;
     }
 
-    /* Modificar estilos del container-user */
-    #container-user {
-        padding: 10px;
+    #box {
+        width: 90%;
+        margin: 10px 0;
     }
 
-    /* Modificar estilos del acceso */
-    .access {
-        padding: 10px;
-    }
-
-    /* Modificar estilos del CRUD */
     .crud {
-        padding: 10px;
+        width: 100%;
+        margin: 20px auto;
     }
 
-    /* Modify footer styles*/
-    #footer {
+    form {
+        width: 100%;
         padding: 10px;
     }
 }
