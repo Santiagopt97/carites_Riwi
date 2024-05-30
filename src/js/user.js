@@ -98,15 +98,15 @@ async function index() {
     const response = await fetch(URL_PRODUCT);
     const data = await response.json();
 
-    // Filtrar los productos que pertenecen al usuario loggeado
+    // filter products of logged user
     const userProducts = data.filter(product =>
         product.ownerAgricola && product.ownerAgricola.ownerEmail === user1.ownerEmail
     );
 
-    // Limpiar el contenido del tbody
+    // clean tbody content
     tbody.innerHTML = '';
 
-    // Agregar los productos del usuario al tbody
+    // add user products to the tbody
     userProducts.forEach(product => {
         tbody.innerHTML += `
             <tr>

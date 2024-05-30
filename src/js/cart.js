@@ -1,32 +1,32 @@
-//Llamamos la base de datos .json y la asignamos a una variable que usaremos en los fetch
+// database called and declaration of variables
 const URL = "http://localhost:3000/favorite/"
 const section = document.querySelector("#section")
 const divDelete = document.querySelector("#div-delete")
 let id
 
 
-// evento para eliminar la card donde se encuentre el boton con clase btn-danger
+// eventlistener btn-danger
 section.addEventListener("click", async function(event){
     if (event.target.classList.contains("btn-danger")) {
         const id = event.target.getAttribute("data-id")
-        await deleteItem(id) // le pasamos el id obtenido y eliminamos
-        await index() // recargamos la lista
+        await deleteItem(id) 
+        await index() 
     }
 })
 
 
-//funcion donde creamos la card y la enviamos al HTML
+// card function and we send it to the HTML
 async function index() {
-    //Llamado a la base de datos .json
+    
     const response = await fetch(URL)
 
-    //Pasamos el .json a array
+    
     const data = await response.json()
 
-    //Recorremos el array de la base de datos 
+    
     data.forEach(element => {
 
-        //Pintamos los card en el html 
+        //card painting with innerhtml
         divDelete.innerHTML += `
         <article id="article" class="card mb-3 cards">
                 <div id="card-id" class="row g-0 ">
@@ -70,10 +70,10 @@ async function index() {
         `
     })
 }
-//Lamo la funcion index
+
 index()
 
-//Funcion para eliminar una card
+//Function Delete card
 async function deleteItem(id) { 
 
     await fetch(URL + id, {

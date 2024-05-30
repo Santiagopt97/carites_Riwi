@@ -1,6 +1,10 @@
+// declaration of variables
+
 const form = document.querySelector("#form-login")
 const email = document.querySelector("#email-login")
 const password = document.querySelector("#password-login")
+
+// event listener for the login
 
 form.addEventListener("submit", async (event) =>{
     event.preventDefault()
@@ -21,7 +25,7 @@ form.addEventListener("submit", async (event) =>{
   
   
   
-  
+  // async function to validate the email
   
   async function validateEmail (email){
     const response = await fetch(`http://localhost:3000/user?ownerEmail=${email.value}`)

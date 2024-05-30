@@ -1,3 +1,5 @@
+// declaration of variables
+
 const form = document.getElementById("form-register")
 const username = document.getElementById("username")
 const lastName = document.getElementById("last-name")

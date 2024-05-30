@@ -1,5 +1,9 @@
+// declaration of variables
+
 const myNav = document.querySelector("#navbar");
 const containerUser = document.querySelector(".position-a")
+
+// navbar scroll colorchange
 
 window.onscroll = function () {
   if (window.scrollY > window.innerHeight) {
@@ -9,8 +13,10 @@ window.onscroll = function () {
   }
 };
 
+// togle button for login and logout
+
 window.addEventListener("load", () => {
-  // Recuperamos el item del localStorage
+
   const userOnline = localStorage.getItem("userOnline");
   if (userOnline !== null) {
     containerUser.innerHTML = `
