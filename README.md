@@ -82,7 +82,7 @@ git clone https://github.com/Santiagopt97/carites_Riwi.git
 
 
 ### Activity Board
-https://trello.com/invite/b/060qbKq1/ATTI1b99913e026ad99889177fe994a7cc9B8959B8C/romeo-riwi
+https://trello.com/invite/b/060qbKq1/ATTIf5c57bc631557c566226676db1d8cf232A7597E5/romeo-riwi
 ### Mockup
 https://drive.google.com/file/d/1IOGpRWzrGce7wgGGMG8twy-0ThLBmfXv/view?usp=sharing
 ### Documentation
