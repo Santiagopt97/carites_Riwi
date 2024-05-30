@@ -223,7 +223,7 @@ p a:hover {
 /* section banner */
 
 #banner {
-  background-image: url("../../public/img/Detalles-06.png");
+  background-image: url("../../public/img/Detalles-06.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@ p a:hover {
 }
 
 #garden {
-  background-image: url("../../public/img/Detalles-07.png");
+  background-image: url("../../public/img/Detalles-07.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -438,7 +438,7 @@ p a:hover {
 
 
 .contact {
-  background-image: url(../../public/img/Detalles-17.png);
+  background-image: url(../../public/img/Detalles-17.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

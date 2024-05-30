@@ -43,7 +43,7 @@ p {
 
 
 .head {
-    background-image: url(/public/img/users.jpg);
+    background-image: url(/public/img/users.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,7 +131,7 @@ video {
     height: 950px;
     width: 100%;
     background-color: var(--cream);
-    background-image: url(/public/img/access.png);
+    background-image: url(/public/img/access.webp);
     border-radius: 0 0 0 350px;
 
 
