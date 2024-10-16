@@ -1,5 +1,5 @@
-const URL_API = `http://localhost:3000/agriculturalProducts`
-const URL_API_FAVORITES = `http://localhost:3000/favorite`
+const URL_API = `https://carites-db.vercel.app/agriculturalProducts`
+const URL_API_FAVORITES = `https://carites-db.vercel.app/favorite`
 
 const sectionProducts = document.querySelector(".section-products")
 

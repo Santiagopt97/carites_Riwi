@@ -43,15 +43,15 @@
 ## API
 -   Saves all products created by a registered farmer user. 
     ``` bash
-     http://localhost:3000/agriculturalProducts
+     https://carites-db.vercel.app/agriculturalProducts
     ```
 -   Saves the favorite products of an unregistered consumer
     ``` bash
-     http://localhost:3000/favorite
+     https://carites-db.vercel.app/favorite
     ```
 -    Saves the information of each registered user
      ``` bash
-     http://localhost:3000/user
+     https://carites-db.vercel.app/user
      ```
 ### Technologies Used
 - It was used for the Frontend 

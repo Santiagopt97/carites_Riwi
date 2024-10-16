@@ -1,5 +1,5 @@
 // database called and declaration of variables
-const URL = "http://localhost:3000/favorite/"
+const URL = "https://carites-db.vercel.app/favorite/"
 const section = document.querySelector("#section")
 const divDelete = document.querySelector("#div-delete")
 let id

@@ -35,7 +35,7 @@ function validatePasswords(password, confirmPassword) {
 
 
 async function validateEmail(email) {
-    const response = await fetch(`http://localhost:3000/agriculturalProducts?email=${email.value}`)
+    const response = await fetch(`https://carites-db.vercel.app/agriculturalProducts?email=${email.value}`)
     const data = await response.json()
 
     if (data.length === 0) {
@@ -56,7 +56,7 @@ async function registerUser (username, lastName, email, password, tel, whatsapp,
         ownerEmail: email.value,
         ownerPassword: password.value
     }
-    await fetch("http://localhost:3000/user", {
+    await fetch("https://carites-db.vercel.app/user", {
         method: "POST",
         body: JSON.stringify(newUser),
         headers: {

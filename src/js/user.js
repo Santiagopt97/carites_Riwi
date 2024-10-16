@@ -8,7 +8,7 @@ const productDescription = document.querySelector('#productDescription')
 const btnLogout = document.querySelector('#logout-button')
 
 
-const URL_PRODUCT = 'http://localhost:3000/agriculturalProducts/'
+const URL_PRODUCT = 'https://carites-db.vercel.app/agriculturalProducts/'
 
 let id
 

@@ -28,7 +28,7 @@ form.addEventListener("submit", async (event) =>{
   // async function to validate the email
   
   async function validateEmail (email){
-    const response = await fetch(`http://localhost:3000/user?ownerEmail=${email.value}`)
+    const response = await fetch(`https://carites-db.vercel.app/user?ownerEmail=${email.value}`)
     const data = await response.json()
   
     if (data.length > 0) {
